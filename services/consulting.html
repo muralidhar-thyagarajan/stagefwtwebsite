@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GCC Consulting - FlywheelTech</title>
+  <meta name="description" content="Start with the decision. FlywheelTech helps you decide whether you should build a GCC — and exactly what it needs to look like if you do.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#35979C',
+            'accent-bright': '#57C1C6',
+            'accent-hover': '#2D8084',
+            'text-primary': '#212529',
+            'text-muted': '#343A40',
+            'text-dim': '#6C757D',
+            'bg-card': '#F8F9FA',
+            'bg-section': '#F6F6F6',
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="../assets/css/custom.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white">
+
+  <!-- Navigation -->
+  <nav id="main-nav" class="fixed top-0 w-full z-50 h-16 bg-white border-b border-[rgba(222,226,230,0.6)]">
+    <div class="max-w-7xl mx-auto px-8 h-full flex items-center justify-between">
+      <a href="../index.html" class="flex items-center">
+        <img src="https://staging.flywheeltechsolutions.com/web/image/website/1/logo/FlyWheel%20Tech%20Solutions?unique=01916d6" alt="FlywheelTech" class="h-8 w-auto">
+      </a>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a href="../index.html" class="text-sm font-medium text-text-primary hover:text-accent transition-colors">Home</a>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            Why Flywheel <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="../why-flywheel/gcc-advantage.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">The GCC Advantage</a>
+            <a href="../why-flywheel/why-india.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Why India</a>
+            <a href="../why-flywheel/why-flywheeltech.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Why FlywheelTech</a>
+          </div>
+        </div>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-accent transition-colors flex items-center gap-1">
+            Services <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="consulting.html" class="block px-4 py-3 text-sm text-accent font-medium rounded-lg transition-colors">GCC Consulting</a>
+            <a href="bot.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Build-Operate-Transfer</a>
+            <a href="managed-services.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Managed Services</a>
+            <a href="decision-operations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Decision Operations</a>
+          </div>
+        </div>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            Industries <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[280px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="../industries/banking-mortgage.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Banking, Mortgages & Financial Services</a>
+            <a href="../industries/fintech-proptech.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Fintech & Proptech</a>
+            <a href="../industries/b2b-startups.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">B2B Startups</a>
+            <a href="../industries/decision-operations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Document-Driven Decision Operations</a>
+          </div>
+        </div>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            About Us <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="../about/our-story.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Our Story</a>
+            <a href="../about/leadership.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Leadership Team</a>
+            <a href="../about/locations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Locations</a>
+          </div>
+        </div>
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us →
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" class="md:hidden p-2">
+        <i data-lucide="menu" class="w-6 h-6 text-text-primary"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-white">
+    <div class="flex justify-between items-center p-6 border-b border-[rgba(222,226,230,0.6)]">
+      <img src="https://staging.flywheeltechsolutions.com/web/image/website/1/logo/FlyWheel%20Tech%20Solutions?unique=01916d6" alt="FlywheelTech" class="h-8 w-auto">
+      <button id="mobile-menu-close" class="p-2">
+        <i data-lucide="x" class="w-6 h-6 text-text-primary"></i>
+      </button>
+    </div>
+    <div class="flex flex-col p-6 space-y-6">
+      <a href="../index.html" class="text-lg font-medium text-text-primary hover:text-accent transition-colors">Home</a>
+      <div class="space-y-4">
+        <p class="text-sm font-semibold text-text-dim uppercase tracking-wider">Why Flywheel</p>
+        <a href="../why-flywheel/gcc-advantage.html" class="block text-base text-text-primary hover:text-accent transition-colors">The GCC Advantage</a>
+        <a href="../why-flywheel/why-india.html" class="block text-base text-text-primary hover:text-accent transition-colors">Why India</a>
+        <a href="../why-flywheel/why-flywheeltech.html" class="block text-base text-text-primary hover:text-accent transition-colors">Why FlywheelTech</a>
+      </div>
+      <div class="space-y-4">
+        <p class="text-sm font-semibold text-text-dim uppercase tracking-wider">Services</p>
+        <a href="consulting.html" class="block text-base text-accent font-medium transition-colors">GCC Consulting</a>
+        <a href="bot.html" class="block text-base text-text-primary hover:text-accent transition-colors">Build-Operate-Transfer</a>
+        <a href="managed-services.html" class="block text-base text-text-primary hover:text-accent transition-colors">Managed Services</a>
+        <a href="decision-operations.html" class="block text-base text-text-primary hover:text-accent transition-colors">Decision Operations</a>
+      </div>
+      <div class="space-y-4">
+        <p class="text-sm font-semibold text-text-dim uppercase tracking-wider">Industries</p>
+        <a href="../industries/banking-mortgage.html" class="block text-base text-text-primary hover:text-accent transition-colors">Banking, Mortgages & Financial Services</a>
+        <a href="../industries/fintech-proptech.html" class="block text-base text-text-primary hover:text-accent transition-colors">Fintech & Proptech</a>
+        <a href="../industries/b2b-startups.html" class="block text-base text-text-primary hover:text-accent transition-colors">B2B Startups</a>
+        <a href="../industries/decision-operations.html" class="block text-base text-text-primary hover:text-accent transition-colors">Document-Driven Decision Operations</a>
+      </div>
+      <div class="space-y-4">
+        <p class="text-sm font-semibold text-text-dim uppercase tracking-wider">About Us</p>
+        <a href="../about/our-story.html" class="block text-base text-text-primary hover:text-accent transition-colors">Our Story</a>
+        <a href="../about/leadership.html" class="block text-base text-text-primary hover:text-accent transition-colors">Leadership Team</a>
+        <a href="../about/locations.html" class="block text-base text-text-primary hover:text-accent transition-colors">Locations</a>
+      </div>
+      <a href="../contact.html" class="block mt-6 text-center bg-accent text-white rounded-lg px-6 py-3 font-semibold hover:bg-accent-hover transition-colors">Talk to Us →</a>
+    </div>
+  </div>
+
+  <!-- Section 1: Opening -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-8 relative z-10 pt-16">
+      <p class="text-xs font-['JetBrains_Mono'] text-text-dim tracking-widest uppercase mb-6" data-reveal="fade">
+        SERVICES / GCC CONSULTING
+      </p>
+
+      <p class="text-xs font-['JetBrains_Mono'] text-accent tracking-widest uppercase mb-4" data-reveal="fade" style="transition-delay: 0.1s">
+        GCC CONSULTING
+      </p>
+
+      <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up" style="transition-delay: 0.2s">
+        Start with the Decision. Not the Build.
+      </h1>
+
+      <p class="text-[clamp(1.1rem,2vw,1.4rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade" style="transition-delay: 0.25s">
+        Before you commit to building a GCC, FlywheelTech helps you decide whether you should — and exactly what it needs to look like if you do.
+      </p>
+
+      <div class="max-w-4xl text-lg text-text-muted leading-relaxed space-y-4" data-reveal="fade-up" style="transition-delay: 0.3s">
+        <p>
+          The most expensive mistake in GCC planning is building before the architecture is clear. The second most expensive is not building when you should have. Our Advisory engagement answers both questions — with enough rigour to take to a board — before any execution commitment is made.
+        </p>
+        <p>
+          Consulting is available at three stages: before the GCC is created, during build and operation, and post-transfer. At each stage, the questions are different. The discipline is the same: design before you execute.
+        </p>
+      </div>
+
+      <div class="mt-10" data-reveal="fade" style="transition-delay: 0.4s">
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Start with an Advisory Conversation →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: What Advisory Covers -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-bg-section">
+    <div class="max-w-7xl mx-auto px-8 relative z-10">
+      <p class="text-xs font-['JetBrains_Mono'] text-accent tracking-widest uppercase mb-4" data-reveal="fade">
+        THE ENGAGEMENT
+      </p>
+
+      <h2 class="text-[clamp(2rem,4.5vw,3.5rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up" style="transition-delay: 0.1s">
+        Map Your AI Workloads. Audit Your Vendor Exposure. Design the Right Architecture.
+      </h2>
+
+      <p class="text-[clamp(1.1rem,2vw,1.4rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade" style="transition-delay: 0.2s">
+        A 60–90 day structured engagement that produces a board-ready business case — yours to keep whether you proceed or not.
+      </p>
+
+      <div class="max-w-4xl text-lg text-text-muted leading-relaxed mb-8" data-reveal="fade-up" style="transition-delay: 0.3s">
+        <p class="mb-6">Advisory covers five core workstreams:</p>
+
+        <div class="space-y-6">
+          <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+            <h3 class="font-semibold text-text-primary mb-2">AI workload mapping</h3>
+            <p class="text-base">What you are running, what you plan to run, and what the architecture requirements are for each.</p>
+          </div>
+
+          <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+            <h3 class="font-semibold text-text-primary mb-2">Vendor exposure audit</h3>
+            <p class="text-base">Across the five AI lock-in dimensions that matter most to regulated financial institutions: pricing lock-in, IP lock-in, data lock-in, regulatory lock-in, and knowledge lock-in.</p>
+          </div>
+
+          <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+            <h3 class="font-semibold text-text-primary mb-2">Talent strategy design</h3>
+            <p class="text-base">The right skills, the right geography, the right sequencing for your specific situation.</p>
+          </div>
+
+          <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+            <h3 class="font-semibold text-text-primary mb-2">GCC architecture</h3>
+            <p class="text-base">Operating model design, governance framework, org structure, and the ten AI operational domains your new model requires.</p>
+          </div>
+
+          <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+            <h3 class="font-semibold text-text-primary mb-2">Board-ready business case</h3>
+            <p class="text-base">The financial model, the risk case, and the recommendation. You own every deliverable. There is no commitment to proceed to BOT.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10" data-reveal="fade" style="transition-delay: 0.4s">
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us About Advisory →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Three Phases of Consulting -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-8 relative z-10">
+      <p class="text-xs font-['JetBrains_Mono'] text-accent tracking-widest uppercase mb-4" data-reveal="fade">
+        ONGOING CONSULTING
+      </p>
+
+      <h2 class="text-[clamp(2rem,4.5vw,3.5rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up" style="transition-delay: 0.1s">
+        Consulting That Continues Through Every Stage of the GCC Lifecycle.
+      </h2>
+
+      <p class="text-[clamp(1.1rem,2vw,1.4rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade" style="transition-delay: 0.2s">
+        Advisory before commitment. Architecture support during build. Expert access after transfer.
+      </p>
+
+      <div class="max-w-4xl text-lg text-text-muted leading-relaxed space-y-6" data-reveal="fade-up" style="transition-delay: 0.3s">
+        <div class="bg-bg-section border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+          <h3 class="font-semibold text-text-primary mb-3">Pre-creation</h3>
+          <p class="text-base">Should you build a GCC? What kind? For which workloads? The advisory engagement answers these questions before you commit to anything.</p>
+        </div>
+
+        <div class="bg-bg-section border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+          <h3 class="font-semibold text-text-primary mb-3">During build</h3>
+          <p class="text-base">As the GCC is being built and operated, FlywheelTech's architecture and prototyping teams remain available — to review decisions, course-correct, and ensure the build stays aligned with the original architecture.</p>
+        </div>
+
+        <div class="bg-bg-section border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+          <h3 class="font-semibold text-text-primary mb-3">Post-transfer</h3>
+          <p class="text-base">After ownership transfers to you, the same teams remain available for specific work — architecture reviews, new workload onboarding, prototyping. Engagement is on-demand, not retainer. There is no ongoing dependency.</p>
+        </div>
+      </div>
+
+      <div class="mt-10" data-reveal="fade" style="transition-delay: 0.4s">
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Why Start Here -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-bg-section">
+    <div class="max-w-7xl mx-auto px-8 relative z-10">
+      <p class="text-xs font-['JetBrains_Mono'] text-accent tracking-widest uppercase mb-4" data-reveal="fade">
+        WHY IT MATTERS
+      </p>
+
+      <h2 class="text-[clamp(2rem,4.5vw,3.5rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up" style="transition-delay: 0.1s">
+        The Advisory Phase Is Where Expensive Mistakes Are Prevented.
+      </h2>
+
+      <p class="text-[clamp(1.1rem,2vw,1.4rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade" style="transition-delay: 0.2s">
+        Most GCC failures are architecture failures. The Advisory engagement is designed to prevent them.
+      </p>
+
+      <div class="max-w-4xl text-lg text-text-muted leading-relaxed space-y-4" data-reveal="fade-up" style="transition-delay: 0.3s">
+        <p>
+          The organisations that struggle with GCCs are almost always the ones that started with execution before completing architecture. They hired a team before defining what it was supposed to build. They committed to a geography before evaluating the talent strategy. They chose a structure before auditing their vendor exposure.
+        </p>
+        <p>
+          Advisory forces the architecture conversation to happen before the commitment. It is the most valuable part of the engagement for most clients — and it stands alone. If you proceed to BOT, the Advisory work becomes the foundation. If you do not, you still leave with a board-ready business case and a clear architecture for your AI transformation.
+        </p>
+      </div>
+
+      <div class="mt-10" data-reveal="fade" style="transition-delay: 0.4s">
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Start the Conversation →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer CTA Strip -->
+  <section class="py-16 bg-accent">
+    <div class="max-w-7xl mx-auto px-8 text-center">
+      <h2 class="text-3xl font-semibold text-white mb-3">Ready to build AI capability you actually own?</h2>
+      <p class="text-white/80 mb-8 text-lg">Start with a conversation about your situation. No commitment required.</p>
+      <a href="../contact.html" class="inline-block bg-white text-accent font-semibold rounded-lg px-8 py-3 hover:bg-bg-section transition-colors shadow-sm">Talk to Us →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-[rgba(222,226,230,0.6)] py-16">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div>
+          <img src="https://staging.flywheeltechsolutions.com/web/image/website/1/logo/FlyWheel%20Tech%20Solutions?unique=01916d6" alt="FlywheelTech" class="h-8 w-auto mb-4">
+          <p class="text-sm text-text-muted leading-relaxed mb-2">AI capability you own. Built by people who've done it before.</p>
+          <p class="text-xs text-text-dim">Backed by the Vulcan Group.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Why Flywheel</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../why-flywheel/gcc-advantage.html" class="text-text-muted hover:text-accent transition-colors">The GCC Advantage</a></li>
+            <li><a href="../why-flywheel/why-india.html" class="text-text-muted hover:text-accent transition-colors">Why India</a></li>
+            <li><a href="../why-flywheel/why-flywheeltech.html" class="text-text-muted hover:text-accent transition-colors">Why FlywheelTech</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Services</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="consulting.html" class="text-text-muted hover:text-accent transition-colors">GCC Consulting</a></li>
+            <li><a href="bot.html" class="text-text-muted hover:text-accent transition-colors">Build-Operate-Transfer</a></li>
+            <li><a href="managed-services.html" class="text-text-muted hover:text-accent transition-colors">Managed Services</a></li>
+            <li><a href="decision-operations.html" class="text-text-muted hover:text-accent transition-colors">Decision Operations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Company</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../industries/banking-mortgage.html" class="text-text-muted hover:text-accent transition-colors">Industries</a></li>
+            <li><a href="../about/our-story.html" class="text-text-muted hover:text-accent transition-colors">Our Story</a></li>
+            <li><a href="../about/leadership.html" class="text-text-muted hover:text-accent transition-colors">Leadership Team</a></li>
+            <li><a href="../about/locations.html" class="text-text-muted hover:text-accent transition-colors">Locations</a></li>
+            <li><a href="../contact.html" class="text-text-muted hover:text-accent transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-[rgba(222,226,230,0.6)] text-center text-sm text-text-dim">
+        <p>&copy; 2026 FlywheelTech. All rights reserved. | <a href="mailto:info@flywheeltechsolutions.com" class="hover:text-accent transition-colors">info@flywheeltechsolutions.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

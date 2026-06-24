@@ -1,0 +1,206 @@
+/* FlywheelTech - Custom CSS */
+
+/* ===== CSS VARIABLES ===== */
+:root {
+  --color-bg-primary: #FFFFFF;
+  --color-bg-section: #F6F6F6;
+  --color-bg-card: #F8F9FA;
+  --color-accent: #35979C;
+  --color-accent-bright: #57C1C6;
+  --color-accent-glow: rgba(53, 151, 156, 0.15);
+  --color-text-primary: #212529;
+  --color-text-muted: #343A40;
+  --color-text-dim: #6C757D;
+  --color-border: rgba(222, 226, 230, 0.6);
+  --color-cta-bg: #35979C;
+  --color-cta-text: #FFFFFF;
+  --color-cta-hover: #2D8084;
+}
+
+/* ===== FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text-primary);
+}
+
+/* ===== SCROLL REVEAL ANIMATIONS ===== */
+[data-reveal] {
+  opacity: 0;
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+[data-reveal].revealed {
+  opacity: 1;
+}
+
+/* Fade up */
+[data-reveal="fade-up"] {
+  transform: translateY(40px);
+}
+
+[data-reveal="fade-up"].revealed {
+  transform: translateY(0);
+}
+
+/* Fade in */
+[data-reveal="fade"] {
+  transform: none;
+}
+
+[data-reveal="fade"].revealed {
+  opacity: 1;
+}
+
+/* Fade from left */
+[data-reveal="fade-left"] {
+  transform: translateX(-20px);
+}
+
+[data-reveal="fade-left"].revealed {
+  transform: translateX(0);
+}
+
+/* Scale */
+[data-reveal="scale"] {
+  transform: scale(0.95);
+}
+
+[data-reveal="scale"].revealed {
+  transform: scale(1);
+}
+
+/* Stagger children */
+[data-stagger] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+[data-stagger].revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== SECTION TRANSITION LINES ===== */
+.section-line {
+  width: 0;
+  height: 1px;
+  background: var(--color-accent);
+  transition: width 1.2s linear;
+}
+
+/* ===== NAVIGATION ===== */
+#main-nav {
+  transition: all 0.3s ease;
+}
+
+#main-nav.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Dropdown animations */
+.dropdown-menu {
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out, visibility 0.2s ease-out;
+  pointer-events: none;
+}
+
+.dropdown-menu.pointer-events-auto {
+  pointer-events: auto;
+}
+
+.dropdown-menu a {
+  pointer-events: auto;
+}
+
+/* ===== PROGRESS INDICATOR ===== */
+#progress-bar {
+  position: fixed;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 33vh;
+  background: var(--color-border);
+  z-index: 40;
+}
+
+#progress-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: var(--color-accent);
+  transition: height 0.1s linear;
+}
+
+/* ===== PARALLAX BACKGROUNDS ===== */
+[data-parallax] {
+  will-change: transform;
+}
+
+/* ===== STAT GLOW EFFECT ===== */
+.stat-glow {
+  filter: drop-shadow(0 0 12px var(--color-accent-glow));
+}
+
+/* ===== HERO HEADLINE SPLIT WEIGHT ===== */
+.hero-headline-light {
+  font-weight: 300;
+}
+
+.hero-headline-bold {
+  font-weight: 700;
+}
+
+/* ===== HOVER EFFECTS ===== */
+.card-hover {
+  transition: all 0.2s ease;
+}
+
+.card-hover:hover {
+  border-color: var(--color-accent-bright);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== MOBILE MENU ===== */
+#mobile-menu {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+
+  [data-parallax] {
+    transform: none !important;
+  }
+}
+
+/* ===== RESPONSIVE TWEAKS ===== */
+@media (max-width: 768px) {
+  #progress-bar {
+    display: none;
+  }
+}

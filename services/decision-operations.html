@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decision Operations - FlywheelTech</title>
+  <meta name="description" content="AI-enabled. Human-powered. Audit-ready. The operational layer where AI decisions meet human judgment in regulated financial services.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#35979C',
+            'accent-bright': '#57C1C6',
+            'accent-hover': '#2D8084',
+            'text-primary': '#212529',
+            'text-muted': '#343A40',
+            'text-dim': '#6C757D',
+            'bg-card': '#F8F9FA',
+            'bg-section': '#F6F6F6',
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="../assets/css/custom.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white">
+
+  <!-- Navigation -->
+  <nav id="main-nav" class="fixed top-0 w-full z-50 h-16 bg-white border-b border-[rgba(222,226,230,0.6)]">
+    <div class="max-w-7xl mx-auto px-8 h-full flex items-center justify-between">
+      <a href="../index.html" class="flex items-center">
+        <img src="https://staging.flywheeltechsolutions.com/web/image/website/1/logo/FlyWheel%20Tech%20Solutions?unique=01916d6" alt="FlywheelTech" class="h-8 w-auto">
+      </a>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a href="../index.html" class="text-sm font-medium text-text-primary hover:text-accent transition-colors">Home</a>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            Why Flywheel <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="../why-flywheel/gcc-advantage.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">The GCC Advantage</a>
+            <a href="../why-flywheel/why-india.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Why India</a>
+            <a href="../why-flywheel/why-flywheeltech.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Why FlywheelTech</a>
+          </div>
+        </div>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-accent transition-colors flex items-center gap-1">
+            Services <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="consulting.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">GCC Consulting</a>
+            <a href="bot.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Build-Operate-Transfer</a>
+            <a href="managed-services.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Managed Services</a>
+            <a href="decision-operations.html" class="block px-4 py-3 text-sm text-accent font-medium rounded-lg transition-colors">Decision Operations</a>
+          </div>
+        </div>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            Industries <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[280px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="../industries/banking-mortgage.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Banking, Mortgages & Financial Services</a>
+            <a href="../industries/fintech-proptech.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Fintech & Proptech</a>
+            <a href="../industries/b2b-startups.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">B2B Startups</a>
+            <a href="../industries/decision-operations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Document-Driven Decision Operations</a>
+          </div>
+        </div>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            About Us <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="../about/our-story.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Our Story</a>
+            <a href="../about/leadership.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Leadership Team</a>
+            <a href="../about/locations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Locations</a>
+          </div>
+        </div>
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us →
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" class="md:hidden p-2">
+        <i data-lucide="menu" class="w-6 h-6 text-text-primary"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-white">
+    <div class="flex justify-between items-center p-6 border-b border-[rgba(222,226,230,0.6)]">
+      <img src="https://staging.flywheeltechsolutions.com/web/image/website/1/logo/FlyWheel%20Tech%20Solutions?unique=01916d6" alt="FlywheelTech" class="h-8 w-auto">
+      <button id="mobile-menu-close" class="p-2">
+        <i data-lucide="x" class="w-6 h-6 text-text-primary"></i>
+      </button>
+    </div>
+    <div class="flex flex-col p-6 space-y-6">
+      <a href="../index.html" class="text-lg font-medium text-text-primary hover:text-accent transition-colors">Home</a>
+      <div class="space-y-4">
+        <p class="text-sm font-semibold text-text-dim uppercase tracking-wider">Why Flywheel</p>
+        <a href="../why-flywheel/gcc-advantage.html" class="block text-base text-text-primary hover:text-accent transition-colors">The GCC Advantage</a>
+        <a href="../why-flywheel/why-india.html" class="block text-base text-text-primary hover:text-accent transition-colors">Why India</a>
+        <a href="../why-flywheel/why-flywheeltech.html" class="block text-base text-text-primary hover:text-accent transition-colors">Why FlywheelTech</a>
+      </div>
+      <div class="space-y-4">
+        <p class="text-sm font-semibold text-text-dim uppercase tracking-wider">Services</p>
+        <a href="consulting.html" class="block text-base text-text-primary hover:text-accent transition-colors">GCC Consulting</a>
+        <a href="bot.html" class="block text-base text-text-primary hover:text-accent transition-colors">Build-Operate-Transfer</a>
+        <a href="managed-services.html" class="block text-base text-text-primary hover:text-accent transition-colors">Managed Services</a>
+        <a href="decision-operations.html" class="block text-base text-accent font-medium transition-colors">Decision Operations</a>
+      </div>
+      <div class="space-y-4">
+        <p class="text-sm font-semibold text-text-dim uppercase tracking-wider">Industries</p>
+        <a href="../industries/banking-mortgage.html" class="block text-base text-text-primary hover:text-accent transition-colors">Banking, Mortgages & Financial Services</a>
+        <a href="../industries/fintech-proptech.html" class="block text-base text-text-primary hover:text-accent transition-colors">Fintech & Proptech</a>
+        <a href="../industries/b2b-startups.html" class="block text-base text-text-primary hover:text-accent transition-colors">B2B Startups</a>
+        <a href="../industries/decision-operations.html" class="block text-base text-text-primary hover:text-accent transition-colors">Document-Driven Decision Operations</a>
+      </div>
+      <div class="space-y-4">
+        <p class="text-sm font-semibold text-text-dim uppercase tracking-wider">About Us</p>
+        <a href="../about/our-story.html" class="block text-base text-text-primary hover:text-accent transition-colors">Our Story</a>
+        <a href="../about/leadership.html" class="block text-base text-text-primary hover:text-accent transition-colors">Leadership Team</a>
+        <a href="../about/locations.html" class="block text-base text-text-primary hover:text-accent transition-colors">Locations</a>
+      </div>
+      <a href="../contact.html" class="block mt-6 text-center bg-accent text-white rounded-lg px-6 py-3 font-semibold hover:bg-accent-hover transition-colors">Talk to Us →</a>
+    </div>
+  </div>
+
+  <!-- Section 1: Opening -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-8 relative z-10 pt-16">
+      <p class="text-xs font-['JetBrains_Mono'] text-text-dim tracking-widest uppercase mb-6" data-reveal="fade">
+        SERVICES / DECISION OPERATIONS
+      </p>
+
+      <p class="text-xs font-['JetBrains_Mono'] text-accent tracking-widest uppercase mb-4" data-reveal="fade" style="transition-delay: 0.1s">
+        DECISION OPERATIONS
+      </p>
+
+      <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up" style="transition-delay: 0.2s">
+        AI-Enabled. Human-Powered. Audit-Ready.
+      </h1>
+
+      <p class="text-[clamp(1.1rem,2vw,1.4rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade" style="transition-delay: 0.25s">
+        The operational layer where AI decisions meet human judgment — and where regulated financial institutions protect themselves.
+      </p>
+
+      <div class="max-w-4xl text-lg text-text-muted leading-relaxed space-y-4" data-reveal="fade-up" style="transition-delay: 0.3s">
+        <p>
+          In regulated financial services, AI cannot make consequential decisions autonomously. Adverse action requirements, fair lending obligations, model risk management guidelines, and the operational reality of exception handling all mandate a structured Human-in-the-Loop governance layer — not as a temporary concession to regulators, but as a permanent operational architecture.
+        </p>
+        <p>
+          Decision Operations is the name for this layer. It is where AI output meets human review — where uncertain decisions are escalated, where confidence thresholds are managed, where the audit trail that regulators require is maintained, and where the feedback loop that improves your AI models over time is closed.
+        </p>
+      </div>
+
+      <div class="mt-10" data-reveal="fade" style="transition-delay: 0.4s">
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us About Decision Operations →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: The Regulatory Context -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-bg-section">
+    <div class="max-w-7xl mx-auto px-8 relative z-10">
+      <p class="text-xs font-['JetBrains_Mono'] text-accent tracking-widest uppercase mb-4" data-reveal="fade">
+        THE REGULATORY MANDATE
+      </p>
+
+      <h2 class="text-[clamp(2rem,4.5vw,3.5rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up" style="transition-delay: 0.1s">
+        CFPB. OCC. EU AI Act. Fannie Mae. The Mandate for HITL Is Already Enforced.
+      </h2>
+
+      <p class="text-[clamp(1.1rem,2vw,1.4rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade" style="transition-delay: 0.2s">
+        The institutions operating AI in regulated lending without a documented HITL governance layer are accumulating a compliance liability that is already being measured.
+      </p>
+
+      <div class="max-w-4xl text-lg text-text-muted leading-relaxed space-y-4" data-reveal="fade-up" style="transition-delay: 0.3s">
+        <p>
+          The regulatory landscape for AI in financial services has crystallised rapidly. CFPB adverse action requirements mandate that every automated lending decision be explainable to the applicant in plain language. OCC Bulletin 2026-13 updates model risk management guidance to include generative AI and agentic systems. EU AI Act Article 6 classifies credit scoring and underwriting AI as high-risk — with mandatory human oversight requirements. Fannie Mae LL-2026-04 requires sellers and servicers to apply AI governance standards "no less protective" than existing model risk frameworks.
+        </p>
+        <p>
+          These are current obligations. They apply specifically to the AI systems that are most valuable in financial services — the ones making credit, underwriting, and compliance decisions. Decision Operations is the operational architecture that satisfies these requirements — not as a compliance checkbox, but as a functioning capability.
+        </p>
+      </div>
+
+      <div class="mt-10" data-reveal="fade" style="transition-delay: 0.4s">
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us About HITL Governance →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: The Four Functions -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-8 relative z-10">
+      <p class="text-xs font-['JetBrains_Mono'] text-accent tracking-widest uppercase mb-4" data-reveal="fade">
+        THE CAPABILITY
+      </p>
+
+      <h2 class="text-[clamp(2rem,4.5vw,3.5rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up" style="transition-delay: 0.1s">
+        Oversight. Escalation. Provenance. Feedback. The Four Functions That Make AI Trustworthy.
+      </h2>
+
+      <p class="text-[clamp(1.1rem,2vw,1.4rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade" style="transition-delay: 0.2s">
+        Decision Operations is not one thing. It is four coordinated functions that together make AI trustworthy in regulated environments.
+      </p>
+
+      <div class="max-w-4xl text-lg text-text-muted leading-relaxed space-y-6" data-reveal="fade-up" style="transition-delay: 0.3s">
+        <div class="bg-bg-section border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+          <h3 class="font-semibold text-text-primary mb-3 text-xl">Oversight</h3>
+          <p class="text-base">Trained human reviewers assess escalated AI decisions — those below confidence thresholds, outside policy guardrails, or flagged by the AI system itself. Reviewers are trained on your specific decision domains, regulatory requirements, and escalation criteria.</p>
+        </div>
+
+        <div class="bg-bg-section border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+          <h3 class="font-semibold text-text-primary mb-3 text-xl">Escalation management</h3>
+          <p class="text-base">The escalation architecture defines which decisions require human review, at what confidence thresholds, and with what response time requirements. This is designed in the Advisory phase and refined continuously as the AI system matures.</p>
+        </div>
+
+        <div class="bg-bg-section border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+          <h3 class="font-semibold text-text-primary mb-3 text-xl">Decision provenance</h3>
+          <p class="text-base">Every AI-assisted decision — the model, the inputs, the confidence score, the escalation outcome, the reviewer identity and rationale — is documented in an auditable record. This is the audit trail that satisfies regulatory examination.</p>
+        </div>
+
+        <div class="bg-bg-section border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+          <h3 class="font-semibold text-text-primary mb-3 text-xl">Feedback loop</h3>
+          <p class="text-base">Reviewer decisions and rationale feed back into model training and refinement. Over time, the AI system becomes more accurate — and the escalation volume decreases — because the human review layer is continuously improving the models it oversees.</p>
+        </div>
+      </div>
+
+      <div class="mt-10" data-reveal="fade" style="transition-delay: 0.4s">
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us About Decision Operations →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Beyond BFSI -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-bg-section">
+    <div class="max-w-7xl mx-auto px-8 relative z-10">
+      <p class="text-xs font-['JetBrains_Mono'] text-accent tracking-widest uppercase mb-4" data-reveal="fade">
+        BROADER APPLICABILITY
+      </p>
+
+      <h2 class="text-[clamp(2rem,4.5vw,3.5rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up" style="transition-delay: 0.1s">
+        Document-Driven, Decision-Intensive Environments Across Industries.
+      </h2>
+
+      <p class="text-[clamp(1.1rem,2vw,1.4rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade" style="transition-delay: 0.2s">
+        The same operating architecture applies wherever regulated decisions depend on documents, rules, and human judgment.
+      </p>
+
+      <div class="max-w-4xl text-lg text-text-muted leading-relaxed space-y-4" data-reveal="fade-up" style="transition-delay: 0.3s">
+        <p>
+          The Decision Operations capability was built for BFSI — but the operating architecture applies wherever regulated transactions progress through a defined lifecycle, relying on documents, rules, human judgment, and auditable decision-making to reach an outcome.
+        </p>
+        <p>
+          Legal services. Healthcare record adjudication. Insurance claims. Title and escrow. Government benefit determinations. The specific regulatory requirements differ. The core operating architecture — oversight, escalation, provenance, feedback — is the same.
+        </p>
+        <p>
+          For organisations outside BFSI exploring this capability, the starting point is identical: an Advisory engagement to map the decision domains, assess the regulatory requirements, and design the right HITL architecture for your specific environment.
+        </p>
+      </div>
+
+      <div class="mt-10" data-reveal="fade" style="transition-delay: 0.4s">
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer CTA Strip -->
+  <section class="py-16 bg-accent">
+    <div class="max-w-7xl mx-auto px-8 text-center">
+      <h2 class="text-3xl font-semibold text-white mb-3">Ready to build AI capability you actually own?</h2>
+      <p class="text-white/80 mb-8 text-lg">Start with a conversation about your situation. No commitment required.</p>
+      <a href="../contact.html" class="inline-block bg-white text-accent font-semibold rounded-lg px-8 py-3 hover:bg-bg-section transition-colors shadow-sm">Talk to Us →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-[rgba(222,226,230,0.6)] py-16">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div>
+          <img src="https://staging.flywheeltechsolutions.com/web/image/website/1/logo/FlyWheel%20Tech%20Solutions?unique=01916d6" alt="FlywheelTech" class="h-8 w-auto mb-4">
+          <p class="text-sm text-text-muted leading-relaxed mb-2">AI capability you own. Built by people who've done it before.</p>
+          <p class="text-xs text-text-dim">Backed by the Vulcan Group.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Why Flywheel</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../why-flywheel/gcc-advantage.html" class="text-text-muted hover:text-accent transition-colors">The GCC Advantage</a></li>
+            <li><a href="../why-flywheel/why-india.html" class="text-text-muted hover:text-accent transition-colors">Why India</a></li>
+            <li><a href="../why-flywheel/why-flywheeltech.html" class="text-text-muted hover:text-accent transition-colors">Why FlywheelTech</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Services</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="consulting.html" class="text-text-muted hover:text-accent transition-colors">GCC Consulting</a></li>
+            <li><a href="bot.html" class="text-text-muted hover:text-accent transition-colors">Build-Operate-Transfer</a></li>
+            <li><a href="managed-services.html" class="text-text-muted hover:text-accent transition-colors">Managed Services</a></li>
+            <li><a href="decision-operations.html" class="text-text-muted hover:text-accent transition-colors">Decision Operations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Company</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../industries/banking-mortgage.html" class="text-text-muted hover:text-accent transition-colors">Industries</a></li>
+            <li><a href="../about/our-story.html" class="text-text-muted hover:text-accent transition-colors">Our Story</a></li>
+            <li><a href="../about/leadership.html" class="text-text-muted hover:text-accent transition-colors">Leadership Team</a></li>
+            <li><a href="../about/locations.html" class="text-text-muted hover:text-accent transition-colors">Locations</a></li>
+            <li><a href="../contact.html" class="text-text-muted hover:text-accent transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-[rgba(222,226,230,0.6)] text-center text-sm text-text-dim">
+        <p>&copy; 2026 FlywheelTech. All rights reserved. | <a href="mailto:info@flywheeltechsolutions.com" class="hover:text-accent transition-colors">info@flywheeltechsolutions.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

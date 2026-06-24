@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The GCC Advantage - FlywheelTech</title>
+  <meta name="description" content="The default paths to AI transformation are structurally broken for mid-size BFSI. Learn why a purpose-built AI GCC is the structural answer.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#35979C',
+            'accent-bright': '#57C1C6',
+            'accent-hover': '#2D8084',
+            'text-primary': '#212529',
+            'text-muted': '#343A40',
+            'text-dim': '#6C757D',
+            'bg-card': '#F8F9FA',
+            'bg-section': '#F6F6F6',
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="../assets/css/custom.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white">
+
+  <!-- Navigation (same as home page but always solid) -->
+  <nav id="main-nav" class="fixed top-0 w-full z-50 h-16 bg-white border-b border-[rgba(222,226,230,0.6)]">
+    <div class="max-w-7xl mx-auto px-8 h-full flex items-center justify-between">
+      <a href="../index.html" class="flex items-center">
+        <img src="https://staging.flywheeltechsolutions.com/web/image/website/1/logo/FlyWheel%20Tech%20Solutions?unique=01916d6" alt="FlywheelTech" class="h-8 w-auto">
+      </a>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a href="../index.html" class="text-sm font-medium text-text-primary hover:text-accent transition-colors">Home</a>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-accent transition-colors flex items-center gap-1">
+            Why Flywheel <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="gcc-advantage.html" class="block px-4 py-3 text-sm text-accent font-medium rounded-lg transition-colors">The GCC Advantage</a>
+            <a href="why-india.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Why India</a>
+            <a href="why-flywheeltech.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Why FlywheelTech</a>
+          </div>
+        </div>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            Services <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="../services/consulting.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">GCC Consulting</a>
+            <a href="../services/bot.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Build-Operate-Transfer</a>
+            <a href="../services/managed-services.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Managed Services</a>
+            <a href="../services/decision-operations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Decision Operations</a>
+          </div>
+        </div>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            Industries <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[280px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="../industries/banking-mortgage.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Banking, Mortgages & Financial Services</a>
+            <a href="../industries/fintech-proptech.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Fintech & Proptech</a>
+            <a href="../industries/b2b-startups.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">B2B Startups</a>
+            <a href="../industries/decision-operations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Document-Driven Decision Operations</a>
+          </div>
+        </div>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            About Us <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="../about/our-story.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Our Story</a>
+            <a href="../about/leadership.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Leadership Team</a>
+            <a href="../about/locations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Locations</a>
+          </div>
+        </div>
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us →
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" class="md:hidden p-2">
+        <i data-lucide="menu" class="w-6 h-6 text-text-primary"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-white">
+    <div class="flex justify-between items-center p-6 border-b border-[rgba(222,226,230,0.6)]">
+      <img src="https://staging.flywheeltechsolutions.com/web/image/website/1/logo/FlyWheel%20Tech%20Solutions?unique=01916d6" alt="FlywheelTech" class="h-8 w-auto">
+      <button id="mobile-menu-close" class="p-2">
+        <i data-lucide="x" class="w-6 h-6 text-text-primary"></i>
+      </button>
+    </div>
+    <div class="p-6 overflow-y-auto h-[calc(100vh-80px)]">
+      <a href="../index.html" class="block py-4 text-lg font-medium text-text-primary border-b border-[rgba(222,226,230,0.6)]">Home</a>
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-trigger w-full flex justify-between items-center py-4 text-lg font-medium text-text-primary border-b border-[rgba(222,226,230,0.6)]">
+          Why Flywheel <i data-lucide="chevron-down" class="dropdown-icon w-5 h-5 transition-transform"></i>
+        </button>
+        <div class="mobile-dropdown-menu hidden pl-4">
+          <a href="gcc-advantage.html" class="block py-3 text-base text-accent font-medium">The GCC Advantage</a>
+          <a href="why-india.html" class="block py-3 text-base text-text-muted">Why India</a>
+          <a href="why-flywheeltech.html" class="block py-3 text-base text-text-muted">Why FlywheelTech</a>
+        </div>
+      </div>
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-trigger w-full flex justify-between items-center py-4 text-lg font-medium text-text-primary border-b border-[rgba(222,226,230,0.6)]">
+          Services <i data-lucide="chevron-down" class="dropdown-icon w-5 h-5 transition-transform"></i>
+        </button>
+        <div class="mobile-dropdown-menu hidden pl-4">
+          <a href="../services/consulting.html" class="block py-3 text-base text-text-muted">GCC Consulting</a>
+          <a href="../services/bot.html" class="block py-3 text-base text-text-muted">Build-Operate-Transfer</a>
+          <a href="../services/managed-services.html" class="block py-3 text-base text-text-muted">Managed Services</a>
+          <a href="../services/decision-operations.html" class="block py-3 text-base text-text-muted">Decision Operations</a>
+        </div>
+      </div>
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-trigger w-full flex justify-between items-center py-4 text-lg font-medium text-text-primary border-b border-[rgba(222,226,230,0.6)]">
+          Industries <i data-lucide="chevron-down" class="dropdown-icon w-5 h-5 transition-transform"></i>
+        </button>
+        <div class="mobile-dropdown-menu hidden pl-4">
+          <a href="../industries/banking-mortgage.html" class="block py-3 text-base text-text-muted">Banking, Mortgages & Financial Services</a>
+          <a href="../industries/fintech-proptech.html" class="block py-3 text-base text-text-muted">Fintech & Proptech</a>
+          <a href="../industries/b2b-startups.html" class="block py-3 text-base text-text-muted">B2B Startups</a>
+          <a href="../industries/decision-operations.html" class="block py-3 text-base text-text-muted">Document-Driven Decision Operations</a>
+        </div>
+      </div>
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-trigger w-full flex justify-between items-center py-4 text-lg font-medium text-text-primary border-b border-[rgba(222,226,230,0.6)]">
+          About Us <i data-lucide="chevron-down" class="dropdown-icon w-5 h-5 transition-transform"></i>
+        </button>
+        <div class="mobile-dropdown-menu hidden pl-4">
+          <a href="../about/our-story.html" class="block py-3 text-base text-text-muted">Our Story</a>
+          <a href="../about/leadership.html" class="block py-3 text-base text-text-muted">Leadership Team</a>
+          <a href="../about/locations.html" class="block py-3 text-base text-text-muted">Locations</a>
+        </div>
+      </div>
+      <a href="../contact.html" class="block mt-6 text-center bg-accent text-white rounded-lg px-6 py-3 font-semibold">Talk to Us →</a>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="min-h-[55vh] bg-white flex items-center py-20 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(53,151,156,0.08)_0%,_transparent_60%)] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-8 relative z-10 pt-16">
+      <p class="text-xs font-['JetBrains_Mono'] text-text-dim tracking-widest uppercase mb-6">
+        WHY FLYWHEEL / THE GCC ADVANTAGE
+      </p>
+      <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-semibold text-text-primary leading-[1.1] max-w-3xl mb-4">
+        The Default Paths to AI Transformation Are Structurally Broken for Mid-Size BFSI.
+      </h1>
+      <p class="text-[clamp(1.1rem,2vw,1.4rem)] text-text-muted leading-relaxed max-w-2xl">
+        Build in-house, outsource, or rely on foundation models. Each one has a specific failure mode for your situation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section: Why In-House Fails -->
+  <section class="py-24 bg-bg-section">
+    <div class="max-w-7xl mx-auto px-8">
+      <span class="inline-block bg-[rgba(53,151,156,0.12)] text-accent text-xs font-semibold tracking-widest uppercase rounded-full px-3 py-1 mb-6" data-reveal="fade">
+        PATH 1
+      </span>
+      <h2 class="text-3xl md:text-4xl font-semibold text-text-primary mb-4 max-w-3xl" data-reveal="fade-up">
+        Building In-House Works — If You Have the Budget, the Time, and the Talent Pipeline.
+      </h2>
+      <p class="text-xl text-text-muted mb-8 max-w-3xl" data-reveal="fade-up" style="transition-delay: 0.1s">
+        Most mid-size BFSI companies have none of these in the quantities required.
+      </p>
+      <div class="max-w-3xl text-lg text-text-muted leading-relaxed" data-reveal="fade-up" style="transition-delay: 0.2s">
+        <p>The AI talent market is structurally expensive. The roles required — AI architects, ML engineers, LLMOps specialists, AI governance professionals — do not exist in traditional BFSI organisations and are expensive to hire for directly in US or European markets. They compete for management attention with the core business, making sustained focus difficult to maintain. They require a hiring pipeline that takes years to build. For a mid-size institution, building a full AI capability in-house is not just expensive. It is a different business than the one you are in.</p>
+      </div>
+      <a href="../contact.html" class="inline-flex items-center gap-2 mt-8 text-accent font-medium hover:text-accent-hover underline-offset-4 hover:underline transition-colors" data-reveal="fade" style="transition-delay: 0.3s">
+        Talk to Us About Your Options →
+      </a>
+    </div>
+  </section>
+
+  <!-- Section: Why Outsourcing Fails -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-8">
+      <span class="inline-block bg-[rgba(53,151,156,0.12)] text-accent text-xs font-semibold tracking-widest uppercase rounded-full px-3 py-1 mb-6" data-reveal="fade">
+        PATH 2
+      </span>
+      <h2 class="text-3xl md:text-4xl font-semibold text-text-primary mb-4 max-w-3xl" data-reveal="fade-up">
+        Outsourcing Moves the Problem. It Does Not Solve It.
+      </h2>
+      <p class="text-xl text-text-muted mb-8 max-w-3xl" data-reveal="fade-up" style="transition-delay: 0.1s">
+        When the contract ends, the institutional knowledge leaves with the vendor.
+      </p>
+      <div class="max-w-3xl text-lg text-text-muted leading-relaxed" data-reveal="fade-up" style="transition-delay: 0.2s">
+        <p>Contracting AI capability to an IT services vendor or consultancy provides headcount without building institutional knowledge. The models, operational logic, and architecture understanding accumulate with the vendor. When the engagement ends, or when the vendor's incentives diverge from yours, you are left with delivered outputs and no capability to operate, maintain, or extend them. In a regulated industry, this is not just an operational problem — it is a compliance problem. Explainability requirements, HITL governance, decision provenance — these cannot be delegated to a vendor who will one day exit the relationship.</p>
+      </div>
+      <a href="../contact.html" class="inline-flex items-center gap-2 mt-8 text-accent font-medium hover:text-accent-hover underline-offset-4 hover:underline transition-colors" data-reveal="fade" style="transition-delay: 0.3s">
+        Talk to Us About Building What You Own →
+      </a>
+    </div>
+  </section>
+
+  <!-- Section: The Operating Model Shift -->
+  <section class="py-24 bg-bg-section">
+    <div class="max-w-7xl mx-auto px-8">
+      <span class="inline-block bg-[rgba(53,151,156,0.12)] text-accent text-xs font-semibold tracking-widest uppercase rounded-full px-3 py-1 mb-6" data-reveal="fade">
+        THE REAL CHALLENGE
+      </span>
+      <h2 class="text-3xl md:text-4xl font-semibold text-text-primary mb-4 max-w-3xl" data-reveal="fade-up">
+        AI Doesn't Eliminate Operations. It Rewrites the Entire Operating Model.
+      </h2>
+      <p class="text-xl text-text-muted mb-8 max-w-3xl" data-reveal="fade-up" style="transition-delay: 0.1s">
+        Ten functional domains. None exist in your current org chart. All require permanent, dedicated staffing.
+      </p>
+      <div class="max-w-4xl text-lg text-text-muted leading-relaxed mb-12" data-reveal="fade-up" style="transition-delay: 0.2s">
+        <p>AI shifts operational effort from execution to oversight, orchestration, governance, and optimisation — and creates ten distinct functional domains that do not exist in a traditional BFSI organisation:</p>
+      </div>
+
+      <!-- 10-domain grid -->
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12 max-w-6xl">
+        <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-4 text-center" data-reveal="scale" data-stagger>
+          <div class="text-accent mb-2 flex justify-center"><i data-lucide="brain" class="w-5 h-5"></i></div>
+          <p class="text-xs font-semibold text-text-primary mb-1">MLOps / LLMOps</p>
+          <p class="text-xs text-text-dim leading-snug">Keep AI models accurate and operational in production</p>
+        </div>
+        <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-4 text-center" data-reveal="scale" data-stagger>
+          <div class="text-accent mb-2 flex justify-center"><i data-lucide="bot" class="w-5 h-5"></i></div>
+          <p class="text-xs font-semibold text-text-primary mb-1">AgentOps</p>
+          <p class="text-xs text-text-dim leading-snug">Govern autonomous AI behaviour and tool usage</p>
+        </div>
+        <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-4 text-center" data-reveal="scale" data-stagger>
+          <div class="text-accent mb-2 flex justify-center"><i data-lucide="user-check" class="w-5 h-5"></i></div>
+          <p class="text-xs font-semibold text-text-primary mb-1">HITL / DecisionOps</p>
+          <p class="text-xs text-text-dim leading-snug">Human oversight of regulated AI decisions</p>
+        </div>
+        <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-4 text-center" data-reveal="scale" data-stagger>
+          <div class="text-accent mb-2 flex justify-center"><i data-lucide="database" class="w-5 h-5"></i></div>
+          <p class="text-xs font-semibold text-text-primary mb-1">KnowledgeOps</p>
+          <p class="text-xs text-text-dim leading-snug">Turn enterprise knowledge into AI-ready infrastructure</p>
+        </div>
+        <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-4 text-center" data-reveal="scale" data-stagger>
+          <div class="text-accent mb-2 flex justify-center"><i data-lucide="git-merge" class="w-5 h-5"></i></div>
+          <p class="text-xs font-semibold text-text-primary mb-1">ContextOps</p>
+          <p class="text-xs text-text-dim leading-snug">Orchestrate context and retrieval across agents and systems</p>
+        </div>
+        <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-4 text-center" data-reveal="scale" data-stagger>
+          <div class="text-accent mb-2 flex justify-center"><i data-lucide="dollar-sign" class="w-5 h-5"></i></div>
+          <p class="text-xs font-semibold text-text-primary mb-1">AI FinOps</p>
+          <p class="text-xs text-text-dim leading-snug">Govern token costs and compute economics</p>
+        </div>
+        <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-4 text-center" data-reveal="scale" data-stagger>
+          <div class="text-accent mb-2 flex justify-center"><i data-lucide="shield-check" class="w-5 h-5"></i></div>
+          <p class="text-xs font-semibold text-text-primary mb-1">AISecOps</p>
+          <p class="text-xs text-text-dim leading-snug">Secure AI systems against prompt injection and adversarial attacks</p>
+        </div>
+        <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-4 text-center" data-reveal="scale" data-stagger>
+          <div class="text-accent mb-2 flex justify-center"><i data-lucide="file-check" class="w-5 h-5"></i></div>
+          <p class="text-xs font-semibold text-text-primary mb-1">MirrorOps</p>
+          <p class="text-xs text-text-dim leading-snug">Maintain auditable records of AI decisions and policy lineage</p>
+        </div>
+        <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-4 text-center" data-reveal="scale" data-stagger>
+          <div class="text-accent mb-2 flex justify-center"><i data-lucide="scale" class="w-5 h-5"></i></div>
+          <p class="text-xs font-semibold text-text-primary mb-1">Responsible AI</p>
+          <p class="text-xs text-text-dim leading-snug">Bias, fairness, explainability, regulatory compliance</p>
+        </div>
+        <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-4 text-center" data-reveal="scale" data-stagger>
+          <div class="text-accent mb-2 flex justify-center"><i data-lucide="message-circle" class="w-5 h-5"></i></div>
+          <p class="text-xs font-semibold text-text-primary mb-1">CX Ops</p>
+          <p class="text-xs text-text-dim leading-snug">Operate human + AI customer engagement</p>
+        </div>
+      </div>
+
+      <div class="max-w-3xl text-lg text-text-muted leading-relaxed" data-reveal="fade-up">
+        <p>None of these roles map to a developer, engineer, or QA professional. All must be inside your organisation.</p>
+      </div>
+      <a href="../contact.html" class="inline-flex items-center gap-2 mt-8 text-accent font-medium hover:text-accent-hover underline-offset-4 hover:underline transition-colors" data-reveal="fade">
+        Talk to Us About Your Operating Model →
+      </a>
+    </div>
+  </section>
+
+  <!-- Section: The New P&L -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-8">
+      <span class="inline-block bg-[rgba(53,151,156,0.12)] text-accent text-xs font-semibold tracking-widest uppercase rounded-full px-3 py-1 mb-6" data-reveal="fade">
+        FINANCIAL REALITY
+      </span>
+      <h2 class="text-3xl md:text-4xl font-semibold text-text-primary mb-4 max-w-3xl" data-reveal="fade-up">
+        Your AI Program Has a New P&L. Most Boards Haven't Modeled It Yet.
+      </h2>
+      <p class="text-xl text-text-muted mb-8 max-w-3xl" data-reveal="fade-up" style="transition-delay: 0.1s">
+        Four structural line items are changing at the same time. Each one is material.
+      </p>
+      <div class="max-w-4xl text-lg text-text-muted leading-relaxed mb-12" data-reveal="fade-up" style="transition-delay: 0.2s">
+        <p>The financial model of an AI-native financial institution looks nothing like its predecessor.</p>
+      </div>
+
+      <!-- Four-item visual -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 max-w-4xl">
+        <div class="bg-bg-card border border-[rgba(222,226,230,0.6)] rounded-xl p-6" data-reveal="fade-left" data-stagger>
+          <h3 class="font-semibold text-text-primary text-lg mb-2">Labour Composition</h3>
+          <p class="text-sm text-text-muted">Shifts in skill mix and geography, not just headcount</p>
+        </div>
+        <div class="bg-bg-card border border-[rgba(222,226,230,0.6)] rounded-xl p-6" data-reveal="fade-left" data-stagger>
+          <h3 class="font-semibold text-text-primary text-lg mb-2">G&A Restructure</h3>
+          <p class="text-sm text-text-muted">Management layers thin; real estate contracts change</p>
+        </div>
+        <div class="bg-bg-card border border-[rgba(222,226,230,0.6)] rounded-xl p-6" data-reveal="fade-left" data-stagger>
+          <h3 class="font-semibold text-text-primary text-lg mb-2">Token & Infrastructure</h3>
+          <p class="text-sm text-text-muted">New opex line with no historical benchmark</p>
+        </div>
+        <div class="bg-bg-card border border-[rgba(222,226,230,0.6)] rounded-xl p-6" data-reveal="fade-left" data-stagger>
+          <h3 class="font-semibold text-text-primary text-lg mb-2">Compliance & Audit</h3>
+          <p class="text-sm text-text-muted">Decision provenance is now a cost line, not a project</p>
+        </div>
+      </div>
+
+      <div class="max-w-3xl text-lg text-text-muted leading-relaxed" data-reveal="fade-up">
+        <p>Token and infrastructure costs emerge as an entirely new operating line. AI inference costs scale with usage and are subject to repricing by vendors currently charging below cost to drive adoption. Compliance and audit costs restructure around decision provenance — in a post-OCC Bulletin 2026-13, post-EU AI Act world, the cost of operating AI without an auditable decision trail belongs on your board's risk register today.</p>
+      </div>
+      <a href="../contact.html" class="inline-flex items-center gap-2 mt-8 text-accent font-medium hover:text-accent-hover underline-offset-4 hover:underline transition-colors" data-reveal="fade">
+        Talk to Us About AI Financial Planning →
+      </a>
+    </div>
+  </section>
+
+  <!-- Section: The Mid-Size Bind -->
+  <section class="py-24 bg-bg-section">
+    <div class="max-w-7xl mx-auto px-8">
+      <span class="inline-block bg-[rgba(53,151,156,0.12)] text-accent text-xs font-semibold tracking-widest uppercase rounded-full px-3 py-1 mb-6" data-reveal="fade">
+        YOUR SPECIFIC SITUATION
+      </span>
+      <h2 class="text-3xl md:text-4xl font-semibold text-text-primary mb-4 max-w-3xl" data-reveal="fade-up">
+        Mid-Size BFSI Is Caught in the Same Structural Trap It Faced a Decade Ago.
+      </h2>
+      <p class="text-xl text-text-muted mb-8 max-w-3xl" data-reveal="fade-up" style="transition-delay: 0.1s">
+        Large enough to need the capability. Without the institutional knowledge to build it independently.
+      </p>
+      <div class="max-w-3xl text-lg text-text-muted leading-relaxed" data-reveal="fade-up" style="transition-delay: 0.2s">
+        <p>A decade ago, when the first Global Capability Centers were being established, the model was inaccessible to mid-size companies. Entry costs were prohibitive, operational knowledge was scarce, and the talent ecosystem was not mature for anything short of a large-enterprise build. The companies that accessed the GCC model early built structural advantages that compounded over time. The AI transformation wave is replicating that divide at speed. The companies that solve this in the next 18 months will carry a structural advantage into the rest of the decade.</p>
+      </div>
+      <a href="../contact.html" class="inline-flex items-center gap-2 mt-8 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-[0.95rem] tracking-wider hover:bg-accent-hover transition-colors shadow-sm" data-reveal="fade" style="transition-delay: 0.3s">
+        Start the Conversation →
+      </a>
+    </div>
+  </section>
+
+  <!-- Section: Why Generic GCCs Fail -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-8">
+      <span class="inline-block bg-[rgba(53,151,156,0.12)] text-accent text-xs font-semibold tracking-widest uppercase rounded-full px-3 py-1 mb-6" data-reveal="fade">
+        THE WRONG TOOL
+      </span>
+      <h2 class="text-3xl md:text-4xl font-semibold text-text-primary mb-4 max-w-3xl" data-reveal="fade-up">
+        Most GCC Providers Are Staffing Agencies with a Capability Center Rebrand.
+      </h2>
+      <p class="text-xl text-text-muted mb-8 max-w-3xl" data-reveal="fade-up" style="transition-delay: 0.1s">
+        FTE arbitrage is not an AI transformation strategy. Knowing the difference before you sign matters.
+      </p>
+      <div class="max-w-3xl text-lg text-text-muted leading-relaxed" data-reveal="fade-up" style="transition-delay: 0.2s">
+        <p>The majority of organisations describing themselves as GCC providers today are co-working and real estate arrangements bolted onto recruitment services and administrative support. They can hire people. They cannot build AI capability — because they have no structural reason to understand your specific business, no incentive to prepare your team for the operating model transformation your business requires, and no framework for building the ten AI operational domains your new model depends on. A general-purpose GCC provider gives you headcount in a location. A purpose-built AI GCC partner gives you a functioning capability designed to be handed over as an institutional asset.</p>
+      </div>
+      <a href="../contact.html" class="inline-flex items-center gap-2 mt-8 text-accent font-medium hover:text-accent-hover underline-offset-4 hover:underline transition-colors" data-reveal="fade" style="transition-delay: 0.3s">
+        Talk to Us About What to Look For →
+      </a>
+    </div>
+  </section>
+
+  <!-- Section: The Structural Answer -->
+  <section class="py-24 bg-bg-section">
+    <div class="max-w-7xl mx-auto px-8">
+      <span class="inline-block bg-[rgba(53,151,156,0.12)] text-accent text-xs font-semibold tracking-widest uppercase rounded-full px-3 py-1 mb-6" data-reveal="fade">
+        THE PATH FORWARD
+      </span>
+      <h2 class="text-3xl md:text-4xl font-semibold text-text-primary mb-4 max-w-3xl" data-reveal="fade-up">
+        A Purpose-Built AI GCC Is the Structural Answer.
+      </h2>
+      <p class="text-xl text-text-muted mb-8 max-w-3xl" data-reveal="fade-up" style="transition-delay: 0.1s">
+        Focused on your industry. Designed for AI operations. Built to be yours.
+      </p>
+      <div class="max-w-3xl text-lg text-text-muted leading-relaxed" data-reveal="fade-up" style="transition-delay: 0.2s">
+        <p>A purpose-built AI GCC is not a staffed team in a different time zone. It is an operational unit structured around the AI domains your new operating model requires — with the hiring strategy, the culture architecture, the governance framework, and the institutional knowledge to function as a genuine extension of your organisation. Built correctly, it gives you what no vendor relationship provides: talent that accumulates inside your business, IP that belongs to you, and models you can explain to a regulator without escalating to a vendor.</p>
+      </div>
+      <a href="why-india.html" class="inline-flex items-center gap-2 mt-8 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-[0.95rem] tracking-wider hover:bg-accent-hover transition-colors shadow-sm" data-reveal="fade" style="transition-delay: 0.3s">
+        Learn Why India →
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer CTA Strip -->
+  <section class="py-16 bg-accent">
+    <div class="max-w-7xl mx-auto px-8 text-center">
+      <h2 class="text-3xl font-semibold text-white mb-3">Ready to build AI capability you actually own?</h2>
+      <p class="text-white/80 mb-8 text-lg">Start with a conversation about your situation. No commitment required.</p>
+      <a href="../contact.html" class="inline-block bg-white text-accent font-semibold rounded-lg px-8 py-3 hover:bg-bg-section transition-colors shadow-sm">
+        Talk to Us →
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-[rgba(222,226,230,0.6)] py-16">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div>
+          <img src="https://staging.flywheeltechsolutions.com/web/image/website/1/logo/FlyWheel%20Tech%20Solutions?unique=01916d6" alt="FlywheelTech" class="h-8 w-auto mb-4">
+          <p class="text-sm text-text-muted leading-relaxed mb-2">AI capability you own. Built by people who've done it before.</p>
+          <p class="text-xs text-text-dim">Backed by the Vulcan Group.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Why Flywheel</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="gcc-advantage.html" class="text-text-muted hover:text-accent transition-colors">The GCC Advantage</a></li>
+            <li><a href="why-india.html" class="text-text-muted hover:text-accent transition-colors">Why India</a></li>
+            <li><a href="why-flywheeltech.html" class="text-text-muted hover:text-accent transition-colors">Why FlywheelTech</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Services</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../services/consulting.html" class="text-text-muted hover:text-accent transition-colors">GCC Consulting</a></li>
+            <li><a href="../services/bot.html" class="text-text-muted hover:text-accent transition-colors">Build-Operate-Transfer</a></li>
+            <li><a href="../services/managed-services.html" class="text-text-muted hover:text-accent transition-colors">Managed Services</a></li>
+            <li><a href="../services/decision-operations.html" class="text-text-muted hover:text-accent transition-colors">Decision Operations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Company</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../industries/banking-mortgage.html" class="text-text-muted hover:text-accent transition-colors">Industries</a></li>
+            <li><a href="../about/our-story.html" class="text-text-muted hover:text-accent transition-colors">Our Story</a></li>
+            <li><a href="../about/leadership.html" class="text-text-muted hover:text-accent transition-colors">Leadership Team</a></li>
+            <li><a href="../about/locations.html" class="text-text-muted hover:text-accent transition-colors">Locations</a></li>
+            <li><a href="../contact.html" class="text-text-muted hover:text-accent transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-[rgba(222,226,230,0.6)] text-center text-sm text-text-dim">
+        <p>&copy; 2026 FlywheelTech. All rights reserved. | <a href="mailto:info@flywheeltechsolutions.com" class="hover:text-accent transition-colors">info@flywheeltechsolutions.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

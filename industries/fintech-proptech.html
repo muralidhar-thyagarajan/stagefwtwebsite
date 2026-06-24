@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fintech & Proptech - FlywheelTech</title>
+  <meta name="description" content="Fintechs scale faster than they build governance. That gap becomes liability. We help you build AI capability that is enterprise-ready from day one.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#35979C',
+            'accent-bright': '#57C1C6',
+            'accent-hover': '#2D8084',
+            'text-primary': '#212529',
+            'text-muted': '#343A40',
+            'text-dim': '#6C757D',
+            'bg-card': '#F8F9FA',
+            'bg-section': '#F6F6F6',
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="../assets/css/custom.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white">
+
+  <!-- Navigation -->
+  <nav id="main-nav" class="fixed top-0 w-full z-50 h-16 bg-white border-b border-[rgba(222,226,230,0.6)]">
+    <div class="max-w-7xl mx-auto px-8 h-full flex items-center justify-between">
+      <a href="../index.html" class="flex items-center">
+        <img src="https://staging.flywheeltechsolutions.com/web/image/website/1/logo/FlyWheel%20Tech%20Solutions?unique=01916d6" alt="FlywheelTech" class="h-8 w-auto">
+      </a>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a href="../index.html" class="text-sm font-medium text-text-primary hover:text-accent transition-colors">Home</a>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            Why Flywheel <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="../why-flywheel/gcc-advantage.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">The GCC Advantage</a>
+            <a href="../why-flywheel/why-india.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Why India</a>
+            <a href="../why-flywheel/why-flywheeltech.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Why FlywheelTech</a>
+          </div>
+        </div>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            Services <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="../services/consulting.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">GCC Consulting</a>
+            <a href="../services/bot.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Build-Operate-Transfer</a>
+            <a href="../services/managed-services.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Managed Services</a>
+            <a href="../services/decision-operations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Decision Operations</a>
+          </div>
+        </div>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-accent transition-colors flex items-center gap-1">
+            Industries <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[280px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="banking-mortgage.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Banking, Mortgages & Financial Services</a>
+            <a href="fintech-proptech.html" class="block px-4 py-3 text-sm text-accent font-medium rounded-lg transition-colors">Fintech & Proptech</a>
+            <a href="b2b-startups.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">B2B Startups</a>
+            <a href="decision-operations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Document-Driven Decision Operations</a>
+          </div>
+        </div>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            About Us <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="../about/our-story.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Our Story</a>
+            <a href="../about/leadership.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Leadership Team</a>
+            <a href="../about/locations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Locations</a>
+          </div>
+        </div>
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us →
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" class="md:hidden p-2">
+        <i data-lucide="menu" class="w-6 h-6 text-text-primary"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-white">
+    <div class="flex justify-between items-center p-6 border-b border-[rgba(222,226,230,0.6)]">
+      <img src="https://staging.flywheeltechsolutions.com/web/image/website/1/logo/FlyWheel%20Tech%20Solutions?unique=01916d6" alt="FlywheelTech" class="h-8 w-auto">
+      <button id="mobile-menu-close" class="p-2">
+        <i data-lucide="x" class="w-6 h-6 text-text-primary"></i>
+      </button>
+    </div>
+    <div class="flex flex-col p-6 space-y-6">
+      <a href="../index.html" class="text-lg font-medium text-text-primary hover:text-accent transition-colors">Home</a>
+      <div class="space-y-4">
+        <p class="text-sm font-semibold text-text-dim uppercase tracking-wider">Why Flywheel</p>
+        <a href="../why-flywheel/gcc-advantage.html" class="block text-base text-text-primary hover:text-accent transition-colors">The GCC Advantage</a>
+        <a href="../why-flywheel/why-india.html" class="block text-base text-text-primary hover:text-accent transition-colors">Why India</a>
+        <a href="../why-flywheel/why-flywheeltech.html" class="block text-base text-text-primary hover:text-accent transition-colors">Why FlywheelTech</a>
+      </div>
+      <div class="space-y-4">
+        <p class="text-sm font-semibold text-text-dim uppercase tracking-wider">Services</p>
+        <a href="../services/consulting.html" class="block text-base text-text-primary hover:text-accent transition-colors">GCC Consulting</a>
+        <a href="../services/bot.html" class="block text-base text-text-primary hover:text-accent transition-colors">Build-Operate-Transfer</a>
+        <a href="../services/managed-services.html" class="block text-base text-text-primary hover:text-accent transition-colors">Managed Services</a>
+        <a href="../services/decision-operations.html" class="block text-base text-text-primary hover:text-accent transition-colors">Decision Operations</a>
+      </div>
+      <div class="space-y-4">
+        <p class="text-sm font-semibold text-text-dim uppercase tracking-wider">Industries</p>
+        <a href="banking-mortgage.html" class="block text-base text-text-primary hover:text-accent transition-colors">Banking, Mortgages & Financial Services</a>
+        <a href="fintech-proptech.html" class="block text-base text-accent font-medium transition-colors">Fintech & Proptech</a>
+        <a href="b2b-startups.html" class="block text-base text-text-primary hover:text-accent transition-colors">B2B Startups</a>
+        <a href="decision-operations.html" class="block text-base text-text-primary hover:text-accent transition-colors">Document-Driven Decision Operations</a>
+      </div>
+      <div class="space-y-4">
+        <p class="text-sm font-semibold text-text-dim uppercase tracking-wider">About Us</p>
+        <a href="../about/our-story.html" class="block text-base text-text-primary hover:text-accent transition-colors">Our Story</a>
+        <a href="../about/leadership.html" class="block text-base text-text-primary hover:text-accent transition-colors">Leadership Team</a>
+        <a href="../about/locations.html" class="block text-base text-text-primary hover:text-accent transition-colors">Locations</a>
+      </div>
+      <a href="../contact.html" class="block mt-6 text-center bg-accent text-white rounded-lg px-6 py-3 font-semibold hover:bg-accent-hover transition-colors">Talk to Us →</a>
+    </div>
+  </div>
+
+  <!-- Section 1: Opening -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-8 relative z-10 pt-16">
+      <p class="text-xs font-['JetBrains_Mono'] text-text-dim tracking-widest uppercase mb-6" data-reveal="fade">
+        INDUSTRIES / FINTECH & PROPTECH
+      </p>
+
+      <p class="text-xs font-['JetBrains_Mono'] text-accent tracking-widest uppercase mb-4" data-reveal="fade" style="transition-delay: 0.1s">
+        FINTECH & PROPTECH
+      </p>
+
+      <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up" style="transition-delay: 0.2s">
+        Fintechs Scale Faster Than They Build Governance. That Gap Becomes Liability.
+      </h1>
+
+      <p class="text-[clamp(1.1rem,2vw,1.4rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade" style="transition-delay: 0.25s">
+        The AI capabilities that got you to Series B need to be institutionalised before Series C — or before your first enterprise customer asks the hard questions.
+      </p>
+
+      <div class="max-w-4xl text-lg text-text-muted leading-relaxed space-y-4" data-reveal="fade-up" style="transition-delay: 0.3s">
+        <p>
+          Fintech and proptech companies are often the fastest movers on AI — and the most exposed to the gap between velocity and governance. The AI built for speed in a startup environment is frequently not the AI that survives contact with enterprise buyers, bank partners, or regulators who have started asking about explainability, data provenance, and model governance.
+        </p>
+      </div>
+
+      <div class="mt-10" data-reveal="fade" style="transition-delay: 0.4s">
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us About Your Fintech AI Program →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: The Speed vs Governance Gap -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-bg-section">
+    <div class="max-w-7xl mx-auto px-8 relative z-10">
+      <p class="text-xs font-['JetBrains_Mono'] text-accent tracking-widest uppercase mb-4" data-reveal="fade">
+        THE CHALLENGE
+      </p>
+
+      <h2 class="text-[clamp(2rem,4.5vw,3.5rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up" style="transition-delay: 0.1s">
+        Moving Fast on AI Creates Architecture Debt That Becomes Harder to Repay the Longer You Wait.
+      </h2>
+
+      <p class="text-[clamp(1.1rem,2vw,1.4rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade" style="transition-delay: 0.2s">
+        The decisions you make in the first 18 months of your AI program will determine whether you can scale it — or have to rebuild it.
+      </p>
+
+      <div class="max-w-4xl text-lg text-text-muted leading-relaxed space-y-4" data-reveal="fade-up" style="transition-delay: 0.3s">
+        <p>
+          The pattern is predictable. A fintech builds AI capabilities quickly using foundation model APIs, moves fast, ships features, demonstrates traction. Then an enterprise customer asks for a data processing agreement and wants to understand model governance. A banking partner asks about adverse action compliance. A regulator starts reviewing your underwriting model. And the AI architecture — built for speed, not for scrutiny — doesn't have the governance layer, the audit trail, or the explainability documentation those questions require.
+        </p>
+        <p>
+          Rebuilding from that position is expensive and disruptive. Building it correctly from the start is much cheaper — and the Advisory engagement is the right place to start.
+        </p>
+      </div>
+
+      <div class="mt-10" data-reveal="fade" style="transition-delay: 0.4s">
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us About AI Architecture →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: What Enterprise Buyers Now Require -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-8 relative z-10">
+      <p class="text-xs font-['JetBrains_Mono'] text-accent tracking-widest uppercase mb-4" data-reveal="fade">
+        THE MARKET SHIFT
+      </p>
+
+      <h2 class="text-[clamp(2rem,4.5vw,3.5rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up" style="transition-delay: 0.1s">
+        Enterprise BFSI Buyers Are Asking Harder Questions. Your AI Infrastructure Needs to Keep Up.
+      </h2>
+
+      <p class="text-[clamp(1.1rem,2vw,1.4rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade" style="transition-delay: 0.2s">
+        The due diligence standard for AI vendors selling into regulated financial services has changed materially in the past 18 months.
+      </p>
+
+      <div class="max-w-4xl text-lg text-text-muted leading-relaxed space-y-4" data-reveal="fade-up" style="transition-delay: 0.3s">
+        <p>
+          Enterprise BFSI buyers — banks, insurers, mortgage companies — are being asked by their own regulators to document their AI vendor governance. OCC Bulletin 2026-13, Fannie Mae LL-2026-04, and the EU AI Act all impose obligations that flow upstream to vendors. The result is a new layer of enterprise due diligence that asks: Can you explain the model? Who owns the data? What is the audit trail? How do you handle a regulator's examination request?
+        </p>
+        <p>
+          Fintechs and proptech companies that can answer these questions confidently close enterprise deals faster and with less friction. Those that cannot are increasingly losing to competitors who can.
+        </p>
+      </div>
+
+      <div class="mt-10" data-reveal="fade" style="transition-delay: 0.4s">
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us About Enterprise-Ready AI →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: How FWT Addresses This -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-bg-section">
+    <div class="max-w-7xl mx-auto px-8 relative z-10">
+      <p class="text-xs font-['JetBrains_Mono'] text-accent tracking-widest uppercase mb-4" data-reveal="fade">
+        OUR APPROACH
+      </p>
+
+      <h2 class="text-[clamp(2rem,4.5vw,3.5rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up" style="transition-delay: 0.1s">
+        We Help Fintechs Build AI Capability That Is Enterprise-Ready from Day One.
+      </h2>
+
+      <p class="text-[clamp(1.1rem,2vw,1.4rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade" style="transition-delay: 0.2s">
+        Not a compliance retrofit. An architecture that is built for scale and scrutiny from the start.
+      </p>
+
+      <div class="max-w-4xl text-lg text-text-muted leading-relaxed space-y-4" data-reveal="fade-up" style="transition-delay: 0.3s">
+        <p>
+          FlywheelTech's Advisory engagement for fintech and proptech companies starts with the AI architecture decisions that will matter most as the company scales: model explainability, data governance, HITL design, vendor exposure, and the operating model for a team that can maintain and extend AI capability over time. For companies at the GCC-readiness stage — typically Series B and beyond — the BOT engagement provides a path to building AI capability that is genuinely owned, not rented from a vendor whose incentives are not aligned with yours.
+        </p>
+      </div>
+
+      <div class="mt-10" data-reveal="fade" style="transition-delay: 0.4s">
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us About Your Fintech AI Program →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer CTA Strip -->
+  <section class="py-16 bg-accent">
+    <div class="max-w-7xl mx-auto px-8 text-center">
+      <h2 class="text-3xl font-semibold text-white mb-3">Ready to build AI capability you actually own?</h2>
+      <p class="text-white/80 mb-8 text-lg">Start with a conversation about your situation. No commitment required.</p>
+      <a href="../contact.html" class="inline-block bg-white text-accent font-semibold rounded-lg px-8 py-3 hover:bg-bg-section transition-colors shadow-sm">Talk to Us →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-[rgba(222,226,230,0.6)] py-16">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div>
+          <img src="https://staging.flywheeltechsolutions.com/web/image/website/1/logo/FlyWheel%20Tech%20Solutions?unique=01916d6" alt="FlywheelTech" class="h-8 w-auto mb-4">
+          <p class="text-sm text-text-muted leading-relaxed mb-2">AI capability you own. Built by people who've done it before.</p>
+          <p class="text-xs text-text-dim">Backed by the Vulcan Group.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Why Flywheel</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../why-flywheel/gcc-advantage.html" class="text-text-muted hover:text-accent transition-colors">The GCC Advantage</a></li>
+            <li><a href="../why-flywheel/why-india.html" class="text-text-muted hover:text-accent transition-colors">Why India</a></li>
+            <li><a href="../why-flywheel/why-flywheeltech.html" class="text-text-muted hover:text-accent transition-colors">Why FlywheelTech</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Services</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../services/consulting.html" class="text-text-muted hover:text-accent transition-colors">GCC Consulting</a></li>
+            <li><a href="../services/bot.html" class="text-text-muted hover:text-accent transition-colors">Build-Operate-Transfer</a></li>
+            <li><a href="../services/managed-services.html" class="text-text-muted hover:text-accent transition-colors">Managed Services</a></li>
+            <li><a href="../services/decision-operations.html" class="text-text-muted hover:text-accent transition-colors">Decision Operations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Company</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="banking-mortgage.html" class="text-text-muted hover:text-accent transition-colors">Industries</a></li>
+            <li><a href="../about/our-story.html" class="text-text-muted hover:text-accent transition-colors">Our Story</a></li>
+            <li><a href="../about/leadership.html" class="text-text-muted hover:text-accent transition-colors">Leadership Team</a></li>
+            <li><a href="../about/locations.html" class="text-text-muted hover:text-accent transition-colors">Locations</a></li>
+            <li><a href="../contact.html" class="text-text-muted hover:text-accent transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-[rgba(222,226,230,0.6)] text-center text-sm text-text-dim">
+        <p>&copy; 2026 FlywheelTech. All rights reserved. | <a href="mailto:info@flywheeltechsolutions.com" class="hover:text-accent transition-colors">info@flywheeltechsolutions.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
