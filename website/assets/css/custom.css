@@ -5,6 +5,7 @@
   --color-bg-primary: #FFFFFF;
   --color-bg-section: #F6F6F6;
   --color-bg-card: #F8F9FA;
+  --color-bg-nav: #E8F5F4;
   --color-accent: #35979C;
   --color-accent-bright: #57C1C6;
   --color-accent-glow: rgba(53, 151, 156, 0.15);
@@ -91,11 +92,12 @@ body {
 
 /* ===== NAVIGATION ===== */
 #main-nav {
+  background: var(--color-bg-nav);
   transition: all 0.3s ease;
 }
 
 #main-nav.scrolled {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--color-bg-nav);
   backdrop-filter: blur(12px);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   border-bottom: 1px solid var(--color-border);
@@ -103,6 +105,7 @@ body {
 
 /* Dropdown animations */
 .dropdown-menu {
+  background: var(--color-bg-nav) !important;
   transition: opacity 0.2s ease-out, transform 0.2s ease-out, visibility 0.2s ease-out;
   pointer-events: none;
 }
@@ -168,6 +171,7 @@ body {
 
 /* ===== MOBILE MENU ===== */
 #mobile-menu {
+  background: var(--color-bg-nav) !important;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
