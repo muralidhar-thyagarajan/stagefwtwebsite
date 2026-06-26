@@ -35,7 +35,7 @@
   <nav id="main-nav" class="fixed top-0 w-full z-50 h-16 bg-white border-b border-[rgba(222,226,230,0.6)]">
     <div class="max-w-7xl mx-auto px-8 h-full flex items-center justify-between">
       <a href="../index.html" class="flex items-center">
-        <img src="https://staging.flywheeltechsolutions.com/web/image/website/1/logo/FlyWheel%20Tech%20Solutions?unique=01916d6" alt="FlywheelTech" class="h-8 w-auto">
+        <img src="../assets/images/FlyWheel_Tech_Solutions_logo.png" alt="FlywheelTech" class="h-8 w-auto">
       </a>
 
       <div class="hidden md:flex items-center gap-8">
@@ -96,7 +96,7 @@
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-white">
     <div class="flex justify-between items-center p-6 border-b border-[rgba(222,226,230,0.6)]">
-      <img src="https://staging.flywheeltechsolutions.com/web/image/website/1/logo/FlyWheel%20Tech%20Solutions?unique=01916d6" alt="FlywheelTech" class="h-8 w-auto">
+      <img src="../assets/images/FlyWheel_Tech_Solutions_logo.png" alt="FlywheelTech" class="h-8 w-auto">
       <button id="mobile-menu-close" class="p-2">
         <i data-lucide="x" class="w-6 h-6 text-text-primary"></i>
       </button>
@@ -154,7 +154,7 @@
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(53,151,156,0.08)_0%,_transparent_60%)] pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-8 relative z-10 pt-16">
-      <p class="text-xs font-['JetBrains_Mono'] text-text-dim tracking-widest uppercase mb-6">
+      <p class="text-xs font-sans text-text-dim tracking-widest uppercase mb-6">
         WHY FLYWHEEL / THE GCC ADVANTAGE
       </p>
       <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-semibold text-text-primary leading-[1.1] max-w-3xl mb-4">
@@ -199,10 +199,47 @@
       <p class="text-xl text-text-muted mb-8 max-w-3xl" data-reveal="fade-up" style="transition-delay: 0.1s">
         When the contract ends, the institutional knowledge leaves with the vendor.
       </p>
-      <div class="max-w-3xl text-lg text-text-muted leading-relaxed" data-reveal="fade-up" style="transition-delay: 0.2s">
+      <div class="max-w-3xl text-lg text-text-muted leading-relaxed mb-12" data-reveal="fade-up" style="transition-delay: 0.2s">
         <p>Contracting AI capability to an IT services vendor or consultancy provides headcount without building institutional knowledge. The models, operational logic, and architecture understanding accumulate with the vendor. When the engagement ends, or when the vendor's incentives diverge from yours, you are left with delivered outputs and no capability to operate, maintain, or extend them. In a regulated industry, this is not just an operational problem — it is a compliance problem. Explainability requirements, HITL governance, decision provenance — these cannot be delegated to a vendor who will one day exit the relationship.</p>
       </div>
-      <a href="../contact.html" class="inline-flex items-center gap-2 mt-8 text-accent font-medium hover:text-accent-hover underline-offset-4 hover:underline transition-colors" data-reveal="fade" style="transition-delay: 0.3s">
+
+      <!-- Comparison Table: GCC vs Outsourcing -->
+      <div class="max-w-4xl" data-reveal="fade-up" style="transition-delay: 0.3s">
+        <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl overflow-hidden">
+          <table class="w-full">
+            <thead class="bg-bg-section">
+              <tr>
+                <th class="px-6 py-4 text-left text-sm font-semibold text-text-primary">Factor</th>
+                <th class="px-6 py-4 text-left text-sm font-semibold text-text-primary">GCC (Captive) vs. Outsourcing / IT Services</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-[rgba(222,226,230,0.6)]">
+              <tr>
+                <td class="px-6 py-4 text-sm font-medium text-text-primary">Talent ownership</td>
+                <td class="px-6 py-4 text-sm text-text-muted">Your payroll vs. Vendor's payroll</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-sm font-medium text-text-primary">IP ownership</td>
+                <td class="px-6 py-4 text-sm text-text-muted">100% yours vs. Shared or vendor-controlled</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-sm font-medium text-text-primary">AI model ownership</td>
+                <td class="px-6 py-4 text-sm text-text-muted">Built inside your environment vs. Vendor-managed, often locked</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-sm font-medium text-text-primary">Culture alignment</td>
+                <td class="px-6 py-4 text-sm text-text-muted">Direct — your norms, your standards vs. Indirect — vendor's priorities</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-sm font-medium text-text-primary">Cost over time</td>
+                <td class="px-6 py-4 text-sm text-text-muted">Declining as overhead amortises vs. Fixed or increasing vendor margin</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <a href="../contact.html" class="inline-flex items-center gap-2 mt-8 text-accent font-medium hover:text-accent-hover underline-offset-4 hover:underline transition-colors" data-reveal="fade" style="transition-delay: 0.4s">
         Talk to Us About Building What You Own →
       </a>
     </div>
@@ -386,10 +423,35 @@
       <p class="text-xl text-text-muted mb-8 max-w-3xl" data-reveal="fade-up" style="transition-delay: 0.1s">
         Focused on your industry. Designed for AI operations. Built to be yours.
       </p>
-      <div class="max-w-3xl text-lg text-text-muted leading-relaxed" data-reveal="fade-up" style="transition-delay: 0.2s">
+      <div class="max-w-3xl text-lg text-text-muted leading-relaxed mb-12" data-reveal="fade-up" style="transition-delay: 0.2s">
         <p>A purpose-built AI GCC is not a staffed team in a different time zone. It is an operational unit structured around the AI domains your new operating model requires — with the hiring strategy, the culture architecture, the governance framework, and the institutional knowledge to function as a genuine extension of your organisation. Built correctly, it gives you what no vendor relationship provides: talent that accumulates inside your business, IP that belongs to you, and models you can explain to a regulator without escalating to a vendor.</p>
       </div>
-      <a href="why-india.html" class="inline-flex items-center gap-2 mt-8 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-[0.95rem] tracking-wider hover:bg-accent-hover transition-colors shadow-sm" data-reveal="fade" style="transition-delay: 0.3s">
+
+      <!-- Proof Stats -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 max-w-5xl" data-reveal="fade-up" style="transition-delay: 0.3s">
+        <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-6" data-stagger>
+          <div class="font-sans text-3xl font-bold text-accent mb-2">$69.85B</div>
+          <div class="text-sm text-text-muted leading-snug">India's GCC market size, growing at 8.1% annually</div>
+        </div>
+        <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-6" data-stagger>
+          <div class="font-sans text-3xl font-bold text-accent mb-2">40–60%</div>
+          <div class="text-sm text-text-muted leading-snug">Typical cost savings vs. building the same capability onshore</div>
+        </div>
+        <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-6" data-stagger>
+          <div class="font-sans text-3xl font-bold text-accent mb-2">40%</div>
+          <div class="text-sm text-text-muted leading-snug">Proportion of new GCCs now structured as Build-Operate-Transfer, up from under 10% five years ago</div>
+        </div>
+        <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-6" data-stagger>
+          <div class="font-sans text-3xl font-bold text-accent mb-2">1.5x</div>
+          <div class="text-sm text-text-muted leading-snug">AI/ML talent concentration in mid-market GCCs vs. non-mid-market peers (NASSCOM-Zinnov)</div>
+        </div>
+        <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-6" data-stagger>
+          <div class="font-sans text-3xl font-bold text-accent mb-2">Over 300%</div>
+          <div class="text-sm text-text-muted leading-snug">Year-on-year growth in GenAI and LLM hiring in India GCCs</div>
+        </div>
+      </div>
+
+      <a href="why-india.html" class="inline-flex items-center gap-2 mt-8 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-[0.95rem] tracking-wider hover:bg-accent-hover transition-colors shadow-sm" data-reveal="fade" style="transition-delay: 0.4s">
         Learn Why India →
       </a>
     </div>
@@ -411,7 +473,7 @@
     <div class="max-w-7xl mx-auto px-8">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
         <div>
-          <img src="https://staging.flywheeltechsolutions.com/web/image/website/1/logo/FlyWheel%20Tech%20Solutions?unique=01916d6" alt="FlywheelTech" class="h-8 w-auto mb-4">
+          <img src="../assets/images/FlyWheel_Tech_Solutions_logo.png" alt="FlywheelTech" class="h-8 w-auto mb-4">
           <p class="text-sm text-text-muted leading-relaxed mb-2">AI capability you own. Built by people who've done it before.</p>
           <p class="text-xs text-text-dim">Backed by the Vulcan Group.</p>
         </div>
