@@ -175,6 +175,59 @@ body {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+/* ===== SCROLL CUE ===== */
+.scroll-cue {
+  animation: scroll-cue-bounce 2s ease-in-out infinite;
+}
+
+.scroll-cue:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-cue-bounce {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 8px);
+  }
+}
+
+/* ===== GRAPHIC PLACEHOLDERS ===== */
+/* Light-touch dummy graphics. Replace each .graphic-placeholder with final
+   artwork; the data-graphic attribute names the suggested asset. Styling is
+   kept complementary to the teal accent palette (no heavy imagery). */
+.graphic-placeholder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border: 1px dashed var(--color-accent);
+  border-radius: 0.75rem;
+  background:
+    linear-gradient(135deg, rgba(53, 151, 156, 0.06) 0%, rgba(87, 193, 198, 0.04) 100%);
+  color: var(--color-accent);
+  text-align: center;
+  padding: 2rem;
+  min-height: 200px;
+}
+
+.graphic-placeholder .graphic-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.graphic-placeholder .graphic-suggestion {
+  font-size: 0.8125rem;
+  color: var(--color-text-dim);
+  max-width: 26rem;
+  line-height: 1.5;
+}
+
 /* ===== UTILITY CLASSES ===== */
 .text-balance {
   text-wrap: balance;
