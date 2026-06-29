@@ -193,6 +193,26 @@
   <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-white" data-section-line>
     <!-- Parallax Background -->
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(53,151,156,0.08)_0%,_transparent_60%)] pointer-events-none" data-parallax="0.1"></div>
+    <!-- SVG-HOME-HERO-01 · expansive arcs sweeping out from the top-right + a soft gradient plane: an open horizon of possibility -->
+    <svg class="hero-art hero-art--drift" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="ha1-plane" x1="1" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="var(--color-accent-bright, #57C1C6)" stop-opacity="0.35"/>
+          <stop offset="1" stop-color="var(--color-accent, #35979C)" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <!-- soft translucent plane anchored in the corner -->
+      <path d="M1440 0 L1440 420 Q1120 360 1010 0 Z" fill="url(#ha1-plane)"/>
+      <!-- concentric flowing arcs (full circles clip to quarter-arcs at the corner) -->
+      <g stroke="var(--color-accent, #35979C)" stroke-width="1.5" stroke-opacity="0.6">
+        <circle cx="1440" cy="0" r="240"/>
+        <circle cx="1440" cy="0" r="400"/>
+        <circle cx="1440" cy="0" r="560"/>
+        <circle cx="1440" cy="0" r="720"/>
+      </g>
+      <!-- single gentle sine sweeping across the lower field -->
+      <path d="M-40 600 Q420 520 760 600 T1480 470" stroke="var(--color-accent-bright, #57C1C6)" stroke-width="1.5" stroke-opacity="0.5"/>
+    </svg>
 
     <div class="max-w-7xl mx-auto px-8 relative z-10 pt-16">
       <!-- Section Label -->
@@ -258,6 +278,17 @@
   <section id="section-2" class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-bg-section" data-section-line>
     <!-- Parallax Background -->
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(53,151,156,0.06)_0%,_transparent_60%)] pointer-events-none" data-parallax="0.15"></div>
+    <!-- SVG-HOME-HERO-02 · concentric ripples radiating from the lower-left with an inward-tightening coil: momentum that quietly pulls toward a trap -->
+    <svg class="hero-art hero-art--sway" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true" focusable="false">
+      <g stroke="var(--color-accent, #35979C)" stroke-width="1.5" stroke-opacity="0.55">
+        <circle cx="0" cy="760" r="200"/>
+        <circle cx="0" cy="760" r="340"/>
+        <circle cx="0" cy="760" r="480"/>
+        <circle cx="0" cy="760" r="620"/>
+      </g>
+      <!-- coil winding inward -->
+      <path d="M360 560 C360 470 230 470 230 560 C230 644 338 644 338 572 C338 520 272 520 274 564" stroke="var(--color-accent-bright, #57C1C6)" stroke-width="1.5" stroke-opacity="0.6"/>
+    </svg>
 
     <div class="max-w-7xl mx-auto px-8 relative z-10">
       <!-- Section Label -->
@@ -319,6 +350,23 @@
   <section id="section-3" class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-white" data-section-line>
     <!-- Parallax Background -->
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(53,151,156,0.08)_0%,_transparent_60%)] pointer-events-none" data-parallax="0.2"></div>
+    <!-- SVG-HOME-HERO-03 · an unfurling growth spiral with branching buds: capability that compounds and grows outward from a single seed -->
+    <svg class="hero-art hero-art--drift" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true" focusable="false">
+      <!-- expanding growth spiral -->
+      <path d="M170 200 C170 150 250 150 250 210 C250 290 140 300 100 230 C50 140 180 70 290 90 C420 114 470 270 360 360" stroke="var(--color-accent, #35979C)" stroke-width="1.5" stroke-opacity="0.6"/>
+      <!-- branching shoots -->
+      <g stroke="var(--color-accent-bright, #57C1C6)" stroke-width="1.5" stroke-opacity="0.55">
+        <path d="M360 360 L420 412"/>
+        <path d="M290 90 L350 58"/>
+        <path d="M250 210 L322 210"/>
+      </g>
+      <!-- buds -->
+      <g fill="var(--color-accent-bright, #57C1C6)" fill-opacity="0.7">
+        <circle cx="424" cy="416" r="5"/>
+        <circle cx="354" cy="54" r="5"/>
+        <circle cx="326" cy="210" r="5"/>
+      </g>
+    </svg>
 
     <div class="max-w-7xl mx-auto px-8 relative z-10">
       <!-- Section Label -->
@@ -346,11 +394,48 @@
         <p>The Build-Operate-Transfer model — now the mainstream path for mid-market firms, having grown to approximately 40% of new GCC setups — makes the entry point accessible. You do not need to build from scratch. You need the right partner: one who has operated this at scale, in a regulated industry, and whose only commercial incentive is to make you independent.</p>
       </div>
 
-      <!-- Graphic Placeholder: signature brand diagram (replace with final artwork) -->
-      <div class="graphic-placeholder max-w-3xl mb-12" data-graphic="flywheel-compounding-diagram" data-reveal="fade-up">
-        <i data-lucide="refresh-cw" class="w-10 h-10"></i>
-        <p class="graphic-label">Graphic: flywheel-compounding-diagram</p>
-        <p class="graphic-suggestion">Suggested: a clean circular "flywheel" diagram showing how owned talent, IP, and governance compound into accelerating AI capability — a single-color line illustration in the teal accent, reinforcing the brand metaphor.</p>
+      <!-- SVG-HOME-DIAGRAM-FLYWHEEL · signature brand diagram: owned Talent, IP and Governance ride a turning flywheel that compounds into accelerating AI capability you own -->
+      <div class="max-w-3xl mb-12" data-graphic="flywheel-compounding-diagram" data-reveal="fade-up">
+        <svg class="flywheel-diagram" viewBox="0 0 600 560" fill="none" role="img" aria-label="Flywheel diagram: owned talent, IP and governance compound into accelerating AI capability you own.">
+          <!-- spokes from hub to each node -->
+          <g stroke="var(--color-accent, #35979C)" stroke-width="1.5" stroke-opacity="0.35">
+            <path d="M300 250 L300 60"/>
+            <path d="M300 250 L130 348"/>
+            <path d="M300 250 L470 348"/>
+          </g>
+
+          <!-- rotating outer ring + direction arrows convey perpetual motion -->
+          <g class="fw-motion">
+            <circle cx="300" cy="250" r="210" stroke="var(--color-accent-bright, #57C1C6)" stroke-width="2" stroke-opacity="0.7" stroke-dasharray="2 12" stroke-linecap="round"/>
+            <g stroke="var(--color-accent, #35979C)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.8">
+              <path d="M221 34 A230 230 0 0 1 379 34"/>
+              <path d="M374 28 L379 34 L373 40"/>
+              <path d="M527 290 A230 230 0 0 1 448 426"/>
+              <path d="M455 432 L448 426 L441 432"/>
+              <path d="M152 426 A230 230 0 0 1 74 290"/>
+              <path d="M80 296 L74 290 L80 284"/>
+            </g>
+          </g>
+
+          <!-- three owned pillars on the wheel -->
+          <g>
+            <circle cx="300" cy="60" r="52" fill="var(--color-bg-card, #F8F9FA)" stroke="var(--color-accent, #35979C)" stroke-width="2"/>
+            <text class="fw-node-label" x="300" y="65" text-anchor="middle" fill="var(--color-text-primary, #212529)">Talent</text>
+            <circle cx="130" cy="348" r="52" fill="var(--color-bg-card, #F8F9FA)" stroke="var(--color-accent, #35979C)" stroke-width="2"/>
+            <text class="fw-node-label" x="130" y="353" text-anchor="middle" fill="var(--color-text-primary, #212529)">IP</text>
+            <circle cx="470" cy="348" r="52" fill="var(--color-bg-card, #F8F9FA)" stroke="var(--color-accent, #35979C)" stroke-width="2"/>
+            <text class="fw-node-label" x="470" y="353" text-anchor="middle" fill="var(--color-text-primary, #212529)">Governance</text>
+          </g>
+
+          <!-- hub: the compounding capability -->
+          <circle cx="300" cy="250" r="70" fill="var(--color-accent-glow, rgba(53,151,156,0.15))" stroke="var(--color-accent, #35979C)" stroke-width="2.5"/>
+          <text class="fw-hub-label" x="300" y="244" text-anchor="middle" fill="var(--color-accent, #35979C)">AI Capability</text>
+          <text class="fw-hub-label" x="300" y="266" text-anchor="middle" fill="var(--color-accent, #35979C)">You Own</text>
+
+          <!-- caption -->
+          <text class="fw-caption" x="300" y="520" text-anchor="middle" fill="var(--color-text-dim, #6C757D)">Owned talent, IP &amp; governance compound</text>
+          <text class="fw-caption" x="300" y="540" text-anchor="middle" fill="var(--color-text-dim, #6C757D)">into accelerating capability — turn after turn.</text>
+        </svg>
       </div>
 
       <!-- Three Feature Cards -->
@@ -394,6 +479,27 @@
   <section id="section-4" class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-bg-section" data-section-line>
     <!-- Parallax Background -->
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(53,151,156,0.06)_0%,_transparent_60%)] pointer-events-none" data-parallax="0.25"></div>
+    <!-- SVG-HOME-HERO-04 · clustered, gently overlapping soft hexagons: proven structure assembled at scale, panel by panel -->
+    <svg class="hero-art hero-art--sway" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="ha4-fill" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="var(--color-accent-bright, #57C1C6)" stop-opacity="0.18"/>
+          <stop offset="1" stop-color="var(--color-accent, #35979C)" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <!-- translucent filled hexagon -->
+      <path d="M1180 380 L1300 440 L1310 575 L1200 660 L1075 605 L1062 470 Z" fill="url(#ha4-fill)" stroke="var(--color-accent, #35979C)" stroke-width="1.5" stroke-opacity="0.5"/>
+      <!-- outline hexagons overlapping it -->
+      <g stroke="var(--color-accent-bright, #57C1C6)" stroke-width="1.5" stroke-opacity="0.5">
+        <path d="M1320 470 L1430 525 L1438 655 L1330 735 L1220 675 L1222 545 Z"/>
+        <path d="M1040 560 L1130 600 L1135 690 L1050 735 L965 690 L962 605 Z"/>
+      </g>
+      <!-- soft accent dots -->
+      <g fill="var(--color-accent, #35979C)" fill-opacity="0.35">
+        <circle cx="1300" cy="600" r="4"/>
+        <circle cx="1120" cy="520" r="4"/>
+      </g>
+    </svg>
 
     <div class="max-w-7xl mx-auto px-8 relative z-10">
       <!-- Section Label -->
@@ -457,6 +563,27 @@
   <section id="section-5" class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-white">
     <!-- Parallax Background -->
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(53,151,156,0.08)_0%,_transparent_60%)] pointer-events-none" data-parallax="0.3"></div>
+    <!-- SVG-HOME-HERO-05 · a minimal globe with latitude/meridian arcs, a quiet horizon line and three connected points: Americas, Europe, India — one world -->
+    <svg class="hero-art hero-art--drift" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true" focusable="false">
+      <g stroke="var(--color-accent, #35979C)" stroke-width="1.5" stroke-opacity="0.5">
+        <circle cx="720" cy="380" r="300"/>
+        <ellipse cx="720" cy="380" rx="300" ry="92"/>
+        <ellipse cx="720" cy="380" rx="118" ry="300"/>
+      </g>
+      <!-- quiet horizon line -->
+      <path d="M120 560 H1320" stroke="var(--color-accent-bright, #57C1C6)" stroke-width="1.5" stroke-opacity="0.35"/>
+      <!-- three located points -->
+      <g stroke="var(--color-accent-bright, #57C1C6)" stroke-width="1.5" stroke-opacity="0.55">
+        <circle cx="520" cy="360" r="12"/>
+        <circle cx="760" cy="250" r="12"/>
+        <circle cx="900" cy="430" r="12"/>
+      </g>
+      <g fill="var(--color-accent, #35979C)" fill-opacity="0.7">
+        <circle cx="520" cy="360" r="5"/>
+        <circle cx="760" cy="250" r="5"/>
+        <circle cx="900" cy="430" r="5"/>
+      </g>
+    </svg>
 
     <div class="max-w-7xl mx-auto px-8 relative z-10">
       <!-- Section Label -->

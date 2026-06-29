@@ -228,6 +228,78 @@ body {
   line-height: 1.5;
 }
 
+/* ===== HERO DECORATIVE LINE-ART (feedback5) ===== */
+/* Full-bleed abstract SVG layers that sit above the radial-gradient wash and
+   below the hero content (z-10). All colour comes from CSS variables with a
+   hard-coded fallback so the art degrades gracefully without custom props. */
+.hero-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.55;
+}
+
+/* Keep contour weights crisp despite preserveAspectRatio="slice" scaling */
+.hero-art [stroke] {
+  vector-effect: non-scaling-stroke;
+}
+
+@keyframes hero-drift {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50%      { transform: translate3d(0, -16px, 0); }
+}
+
+@keyframes hero-sway {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50%      { transform: translate3d(16px, 10px, 0); }
+}
+
+.hero-art--drift { animation: hero-drift 22s ease-in-out infinite; }
+.hero-art--sway  { animation: hero-sway 26s ease-in-out infinite; }
+
+/* ===== FLYWHEEL COMPOUNDING DIAGRAM (feedback5) ===== */
+.flywheel-diagram {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  margin-inline: auto;
+}
+
+.flywheel-diagram .fw-node-label {
+  font: 600 13px/1.15 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  fill: var(--color-text-primary, #212529);
+}
+
+.flywheel-diagram .fw-hub-label {
+  font: 700 15px/1.2 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  fill: var(--color-accent, #35979C);
+}
+
+.flywheel-diagram .fw-caption {
+  font: 400 13px/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  fill: var(--color-text-dim, #6C757D);
+}
+
+/* Slowly rotating outer ring + direction arrows convey the flywheel's motion */
+@keyframes fw-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.flywheel-diagram .fw-motion {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: fw-spin 48s linear infinite;
+}
+
 /* ===== UTILITY CLASSES ===== */
 .text-balance {
   text-wrap: balance;
