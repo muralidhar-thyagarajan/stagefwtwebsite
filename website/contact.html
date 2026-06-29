@@ -153,6 +153,22 @@
   <section class="min-h-[40vh] bg-white flex items-center py-20 relative overflow-hidden">
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(53,151,156,0.08)_0%,_transparent_60%)] pointer-events-none"></div>
 
+    <!-- abstract hero art · quiet layered horizon with a soft rising arc -->
+    <svg class="hero-art hero-art--drift" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="ha-horizon-fade" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="var(--color-accent-bright, #57C1C6)" stop-opacity="0.18"/>
+          <stop offset="1" stop-color="var(--color-accent, #35979C)" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <path d="M0 470 H1440 V760 H0 Z" fill="url(#ha-horizon-fade)"/>
+      <g stroke="var(--color-accent, #35979C)" stroke-width="1.5" stroke-opacity="0.4">
+        <path d="M0 470 Q720 430 1440 470"/>
+        <path d="M0 540 Q720 510 1440 540"/>
+        <path d="M0 610 Q720 588 1440 610"/>
+      </g>
+      <circle cx="1080" cy="300" r="120" stroke="var(--color-accent-bright, #57C1C6)" stroke-width="1.5" stroke-opacity="0.45"/>
+    </svg>
     <div class="max-w-7xl mx-auto px-8 relative z-10 pt-16">
       <span class="inline-block bg-[rgba(53,151,156,0.12)] text-accent text-xs font-semibold tracking-widest uppercase rounded-full px-3 py-1 mb-6">
         GET IN TOUCH

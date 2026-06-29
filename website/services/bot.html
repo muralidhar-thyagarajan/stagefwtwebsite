@@ -135,6 +135,24 @@
 
   <!-- Section 1: Opening -->
   <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-white">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(53,151,156,0.08)_0%,_transparent_60%)] pointer-events-none"></div>
+    <!-- abstract hero art · expansive arcs sweeping from the top-right + soft plane -->
+    <svg class="hero-art hero-art--drift" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="ha-arcs-plane" x1="1" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="var(--color-accent-bright, #57C1C6)" stop-opacity="0.35"/>
+          <stop offset="1" stop-color="var(--color-accent, #35979C)" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <path d="M1440 0 L1440 420 Q1120 360 1010 0 Z" fill="url(#ha-arcs-plane)"/>
+      <g stroke="var(--color-accent, #35979C)" stroke-width="1.5" stroke-opacity="0.6">
+        <circle cx="1440" cy="0" r="240"/>
+        <circle cx="1440" cy="0" r="400"/>
+        <circle cx="1440" cy="0" r="560"/>
+        <circle cx="1440" cy="0" r="720"/>
+      </g>
+      <path d="M-40 600 Q420 520 760 600 T1480 470" stroke="var(--color-accent-bright, #57C1C6)" stroke-width="1.5" stroke-opacity="0.5"/>
+    </svg>
     <div class="max-w-7xl mx-auto px-8 relative z-10 pt-16">
       <p class="text-xs font-sans text-text-dim tracking-widest uppercase mb-6" data-reveal="fade">
         SERVICES / BUILD-OPERATE-TRANSFER
