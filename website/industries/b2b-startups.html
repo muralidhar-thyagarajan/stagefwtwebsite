@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B2B Startups - FlywheelTech</title>
+  <meta name="description" content="You are building AI products for enterprise buyers. Your AI infrastructure needs to match your pitch. We help you build enterprise-ready AI from day one.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#35979C',
+            'accent-bright': '#57C1C6',
+            'accent-hover': '#2D8084',
+            'text-primary': '#212529',
+            'text-muted': '#343A40',
+            'text-dim': '#6C757D',
+            'bg-card': '#F8F9FA',
+            'bg-section': '#F6F6F6',
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="../assets/css/custom.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white">
+
+  <!-- Navigation -->
+  <nav id="main-nav" class="fixed top-0 w-full z-50 h-16 bg-white border-b border-[rgba(222,226,230,0.6)]">
+    <div class="max-w-7xl mx-auto px-8 h-full flex items-center justify-between">
+      <a href="../home.html" class="flex items-center">
+        <img src="../assets/images/FlyWheel_Tech_Solutions_logo.png" alt="FlywheelTech" class="h-8 w-auto">
+      </a>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a href="../home.html" class="text-sm font-medium text-text-primary hover:text-accent transition-colors">Home</a>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            Why Flywheel <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="../why-flywheel/gcc-advantage.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">The GCC Advantage</a>
+            <a href="../why-flywheel/why-india.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Why India</a>
+            <a href="../why-flywheel/why-flywheeltech.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Why FlywheelTech</a>
+          </div>
+        </div>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            Services <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="../services/consulting.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">GCC Consulting</a>
+            <a href="../services/bot.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Build-Operate-Transfer</a>
+            <a href="../services/managed-services.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Managed Services</a>
+            <a href="../services/decision-operations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Decision Operations</a>
+          </div>
+        </div>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-accent transition-colors flex items-center gap-1">
+            Industries <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[280px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="banking-mortgage.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Banking, Mortgages & Financial Services</a>
+            <a href="fintech-proptech.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Fintech & Proptech</a>
+            <a href="b2b-startups.html" class="block px-4 py-3 text-sm text-accent font-medium rounded-lg transition-colors">B2B Startups</a>
+            <a href="decision-operations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Document-Driven Decision Operations</a>
+          </div>
+        </div>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            About Us <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="../about/our-story.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Our Story</a>
+            <a href="../about/leadership.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Leadership Team</a>
+            <a href="../about/locations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Locations</a>
+          </div>
+        </div>
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us →
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" class="md:hidden p-2">
+        <i data-lucide="menu" class="w-6 h-6 text-text-primary"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-white">
+    <div class="flex justify-between items-center p-6 border-b border-[rgba(222,226,230,0.6)]">
+      <img src="../assets/images/FlyWheel_Tech_Solutions_logo.png" alt="FlywheelTech" class="h-8 w-auto">
+      <button id="mobile-menu-close" class="p-2">
+        <i data-lucide="x" class="w-6 h-6 text-text-primary"></i>
+      </button>
+    </div>
+    <div class="flex flex-col p-6 space-y-6">
+      <a href="../home.html" class="text-lg font-medium text-text-primary hover:text-accent transition-colors">Home</a>
+      <div class="space-y-4">
+        <p class="text-sm font-semibold text-text-dim uppercase tracking-wider">Why Flywheel</p>
+        <a href="../why-flywheel/gcc-advantage.html" class="block text-base text-text-primary hover:text-accent transition-colors">The GCC Advantage</a>
+        <a href="../why-flywheel/why-india.html" class="block text-base text-text-primary hover:text-accent transition-colors">Why India</a>
+        <a href="../why-flywheel/why-flywheeltech.html" class="block text-base text-text-primary hover:text-accent transition-colors">Why FlywheelTech</a>
+      </div>
+      <div class="space-y-4">
+        <p class="text-sm font-semibold text-text-dim uppercase tracking-wider">Services</p>
+        <a href="../services/consulting.html" class="block text-base text-text-primary hover:text-accent transition-colors">GCC Consulting</a>
+        <a href="../services/bot.html" class="block text-base text-text-primary hover:text-accent transition-colors">Build-Operate-Transfer</a>
+        <a href="../services/managed-services.html" class="block text-base text-text-primary hover:text-accent transition-colors">Managed Services</a>
+        <a href="../services/decision-operations.html" class="block text-base text-text-primary hover:text-accent transition-colors">Decision Operations</a>
+      </div>
+      <div class="space-y-4">
+        <p class="text-sm font-semibold text-text-dim uppercase tracking-wider">Industries</p>
+        <a href="banking-mortgage.html" class="block text-base text-text-primary hover:text-accent transition-colors">Banking, Mortgages & Financial Services</a>
+        <a href="fintech-proptech.html" class="block text-base text-text-primary hover:text-accent transition-colors">Fintech & Proptech</a>
+        <a href="b2b-startups.html" class="block text-base text-accent font-medium transition-colors">B2B Startups</a>
+        <a href="decision-operations.html" class="block text-base text-text-primary hover:text-accent transition-colors">Document-Driven Decision Operations</a>
+      </div>
+      <div class="space-y-4">
+        <p class="text-sm font-semibold text-text-dim uppercase tracking-wider">About Us</p>
+        <a href="../about/our-story.html" class="block text-base text-text-primary hover:text-accent transition-colors">Our Story</a>
+        <a href="../about/leadership.html" class="block text-base text-text-primary hover:text-accent transition-colors">Leadership Team</a>
+        <a href="../about/locations.html" class="block text-base text-text-primary hover:text-accent transition-colors">Locations</a>
+      </div>
+      <a href="../contact.html" class="block mt-6 text-center bg-accent text-white rounded-lg px-6 py-3 font-semibold hover:bg-accent-hover transition-colors">Talk to Us →</a>
+    </div>
+  </div>
+
+  <!-- Section 1: Opening -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-white">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(53,151,156,0.08)_0%,_transparent_60%)] pointer-events-none"></div>
+    <!-- abstract hero art · expansive arcs sweeping from the top-right + soft plane -->
+    <svg class="hero-art hero-art--drift" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="ha-arcs-plane" x1="1" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="var(--color-accent-bright, #57C1C6)" stop-opacity="0.35"/>
+          <stop offset="1" stop-color="var(--color-accent, #35979C)" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <path d="M1440 0 L1440 420 Q1120 360 1010 0 Z" fill="url(#ha-arcs-plane)"/>
+      <g stroke="var(--color-accent, #35979C)" stroke-width="1.5" stroke-opacity="0.6">
+        <circle cx="1440" cy="0" r="240"/>
+        <circle cx="1440" cy="0" r="400"/>
+        <circle cx="1440" cy="0" r="560"/>
+        <circle cx="1440" cy="0" r="720"/>
+      </g>
+      <path d="M-40 600 Q420 520 760 600 T1480 470" stroke="var(--color-accent-bright, #57C1C6)" stroke-width="1.5" stroke-opacity="0.5"/>
+    </svg>
+    <div class="max-w-7xl mx-auto px-8 relative z-10 pt-16">
+      <p class="text-xs font-sans text-text-dim tracking-widest uppercase mb-6" data-reveal="fade">
+        INDUSTRIES / B2B STARTUPS
+      </p>
+
+      <p class="text-xs font-sans text-accent tracking-widest uppercase mb-4" data-reveal="fade" style="transition-delay: 0.1s">
+        B2B STARTUPS
+      </p>
+
+      <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up" style="transition-delay: 0.2s">
+        You Are Building AI Products for Enterprise Buyers. Your AI Infrastructure Needs to Match Your Pitch.
+      </h1>
+
+      <p class="text-[clamp(1.1rem,2vw,1.4rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade" style="transition-delay: 0.25s">
+        Enterprise BFSI buyers are asking harder questions about AI governance, data provenance, and explainability. You need to be ahead of those questions — not answering them reactively.
+      </p>
+
+      <div class="max-w-4xl text-lg text-text-muted leading-relaxed space-y-4" data-reveal="fade-up" style="transition-delay: 0.3s">
+        <p>
+          B2B startups selling AI products into financial services are encountering a new layer of enterprise due diligence. The buyers they are selling to — banks, insurers, mortgage companies — are being asked by their own regulators to document their AI vendor governance. That means the questions they ask their vendors are getting harder. And the startups that cannot answer them are losing deals to those that can.
+        </p>
+      </div>
+
+      <div class="mt-10" data-reveal="fade" style="transition-delay: 0.4s">
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us About Enterprise-Ready AI Infrastructure →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: The Due Diligence Shift -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-bg-section">
+    <div class="max-w-7xl mx-auto px-8 relative z-10">
+      <p class="text-xs font-sans text-accent tracking-widest uppercase mb-4" data-reveal="fade">
+        THE MARKET SHIFT
+      </p>
+
+      <h2 class="text-[clamp(2rem,4.5vw,3.5rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up" style="transition-delay: 0.1s">
+        Your Enterprise Buyer's Regulator Has Extended Its Reach to Your Product.
+      </h2>
+
+      <p class="text-[clamp(1.1rem,2vw,1.4rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade" style="transition-delay: 0.2s">
+        What used to be a technical evaluation is now a governance evaluation. The standard has shifted — and most startups haven't caught up.
+      </p>
+
+      <div class="max-w-4xl text-lg text-text-muted leading-relaxed space-y-4" data-reveal="fade-up" style="transition-delay: 0.3s">
+        <p>
+          The regulatory requirements that apply to enterprise BFSI buyers now flow upstream to their AI vendors. Fannie Mae LL-2026-04 requires sellers and servicers to apply AI governance standards "no less protective" than existing model risk frameworks — to every AI system they use, including those from third-party vendors. OCC Bulletin 2026-13 extends model risk management guidance to include vendor-provided AI. EU AI Act Article 6 applies to AI systems used in credit scoring and underwriting, regardless of whether the system is built in-house or procured.
+        </p>
+        <p>
+          For a B2B startup selling AI into regulated financial services, this means your enterprise buyer's regulator is effectively evaluating your product. The startups building with governance as a core architectural principle — not a compliance retrofit — are the ones winning enterprise deals as this due diligence standard becomes the norm.
+        </p>
+      </div>
+
+      <div class="mt-10" data-reveal="fade" style="transition-delay: 0.4s">
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us About Your Product Architecture →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: What Enterprise Buyers Are Asking -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-8 relative z-10">
+      <p class="text-xs font-sans text-accent tracking-widest uppercase mb-4" data-reveal="fade">
+        THE NEW STANDARD
+      </p>
+
+      <h2 class="text-[clamp(2rem,4.5vw,3.5rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up" style="transition-delay: 0.1s">
+        Five Questions Every Enterprise BFSI Buyer Is Now Asking Their AI Vendors.
+      </h2>
+
+      <p class="text-[clamp(1.1rem,2vw,1.4rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade" style="transition-delay: 0.2s">
+        If you can't answer these confidently, you are losing to someone who can.
+      </p>
+
+      <div class="max-w-4xl text-lg text-text-muted leading-relaxed space-y-6" data-reveal="fade-up" style="transition-delay: 0.3s">
+        <div class="bg-bg-section border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+          <h3 class="font-semibold text-text-primary mb-2">Can you explain the model's decision in plain language?</h3>
+          <p class="text-base">Adverse action requirements mean your buyer needs to be able to explain a denied application to the applicant. If your model is a black box, the buyer takes the compliance liability.</p>
+        </div>
+
+        <div class="bg-bg-section border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+          <h3 class="font-semibold text-text-primary mb-2">Who owns the data used to train the model?</h3>
+          <p class="text-base">Proprietary data is the competitive moat. If your product trains on customer data in a way that gives you rights to it — or exposes it to other customers — your enterprise buyer will not sign the contract.</p>
+        </div>
+
+        <div class="bg-bg-section border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+          <h3 class="font-semibold text-text-primary mb-2">What is the audit trail?</h3>
+          <p class="text-base">Regulators examining your buyer's AI program will ask for a record of every significant decision. If your system cannot produce one, your buyer cannot pass the examination.</p>
+        </div>
+
+        <div class="bg-bg-section border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+          <h3 class="font-semibold text-text-primary mb-2">How do you handle a model failure?</h3>
+          <p class="text-base">Every AI system fails. What matters is whether the failure is detectable, bounded, and recoverable. Enterprise buyers want a documented incident response process.</p>
+        </div>
+
+        <div class="bg-bg-section border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+          <h3 class="font-semibold text-text-primary mb-2">How do you handle a vendor disruption?</h3>
+          <p class="text-base">47% of enterprise leaders report that a key business function would stop if their primary AI vendor failed. Your buyer wants to know the exit plan — not because they plan to use it, but because their regulator requires them to have one.</p>
+        </div>
+      </div>
+
+      <div class="mt-10" data-reveal="fade" style="transition-delay: 0.4s">
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us About Positioning for Enterprise BFSI →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: How FWT Addresses This -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-bg-section">
+    <div class="max-w-7xl mx-auto px-8 relative z-10">
+      <p class="text-xs font-sans text-accent tracking-widest uppercase mb-4" data-reveal="fade">
+        OUR APPROACH
+      </p>
+
+      <h2 class="text-[clamp(2rem,4.5vw,3.5rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up" style="transition-delay: 0.1s">
+        We Help B2B Startups Build the AI Operations Infrastructure That Enterprise Buyers Require.
+      </h2>
+
+      <p class="text-[clamp(1.1rem,2vw,1.4rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade" style="transition-delay: 0.2s">
+        Not a compliance layer bolted on after the sale. An architecture designed for enterprise scrutiny from the start.
+      </p>
+
+      <div class="max-w-4xl text-lg text-text-muted leading-relaxed space-y-4" data-reveal="fade-up" style="transition-delay: 0.3s">
+        <p>
+          FlywheelTech's Advisory engagement for B2B startups focuses on the AI architecture decisions that determine whether your product can pass enterprise due diligence: model explainability design, data governance framework, HITL architecture, audit trail implementation, and vendor exit documentation. For startups at the stage where the volume of enterprise-ready AI development requires a dedicated team, the GCC model provides a path to building that team as a client-owned asset rather than through a vendor relationship that will eventually become a liability.
+        </p>
+      </div>
+
+      <div class="mt-10" data-reveal="fade" style="transition-delay: 0.4s">
+        <a href="../contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us About Your Product Architecture →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industry Navigation -->
+  <section class="py-12 bg-white border-t border-[rgba(222,226,230,0.6)]">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="flex justify-end">
+        <a href="decision-operations.html" class="inline-flex items-center gap-2 text-accent hover:text-accent-hover transition-colors text-lg font-medium group">
+          <span>Next: Document-Driven Operations</span>
+          <span class="transform transition-transform group-hover:translate-x-1">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer CTA Strip -->
+  <section class="py-16 bg-accent">
+    <div class="max-w-7xl mx-auto px-8 text-center">
+      <h2 class="text-3xl font-semibold text-white mb-3">Ready to build AI capability you actually own?</h2>
+      <p class="text-white/80 mb-8 text-lg">Start with a conversation about your situation. No commitment required.</p>
+      <a href="../contact.html" class="inline-block bg-white text-accent font-semibold rounded-lg px-8 py-3 hover:bg-bg-section transition-colors shadow-sm">Talk to Us →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-[rgba(222,226,230,0.6)] py-16">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div>
+          <img src="../assets/images/FlyWheel_Tech_Solutions_logo.png" alt="FlywheelTech" class="h-8 w-auto mb-4">
+          <p class="text-sm text-text-muted leading-relaxed mb-2">AI capability you own. Built by people who've done it before.</p>
+          <p class="text-xs text-text-dim">Backed by the Vulcan Group.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Why Flywheel</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../why-flywheel/gcc-advantage.html" class="text-text-muted hover:text-accent transition-colors">The GCC Advantage</a></li>
+            <li><a href="../why-flywheel/why-india.html" class="text-text-muted hover:text-accent transition-colors">Why India</a></li>
+            <li><a href="../why-flywheel/why-flywheeltech.html" class="text-text-muted hover:text-accent transition-colors">Why FlywheelTech</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Services</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../services/consulting.html" class="text-text-muted hover:text-accent transition-colors">GCC Consulting</a></li>
+            <li><a href="../services/bot.html" class="text-text-muted hover:text-accent transition-colors">Build-Operate-Transfer</a></li>
+            <li><a href="../services/managed-services.html" class="text-text-muted hover:text-accent transition-colors">Managed Services</a></li>
+            <li><a href="../services/decision-operations.html" class="text-text-muted hover:text-accent transition-colors">Decision Operations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Company</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="banking-mortgage.html" class="text-text-muted hover:text-accent transition-colors">Industries</a></li>
+            <li><a href="../about/our-story.html" class="text-text-muted hover:text-accent transition-colors">Our Story</a></li>
+            <li><a href="../about/leadership.html" class="text-text-muted hover:text-accent transition-colors">Leadership Team</a></li>
+            <li><a href="../about/locations.html" class="text-text-muted hover:text-accent transition-colors">Locations</a></li>
+            <li><a href="../contact.html" class="text-text-muted hover:text-accent transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-[rgba(222,226,230,0.6)] text-center text-sm text-text-dim">
+        <p>&copy; 2026 FlywheelTech. All rights reserved. | <a href="mailto:info@flywheeltechsolutions.com" class="hover:text-accent transition-colors">info@flywheeltechsolutions.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

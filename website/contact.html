@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - FlywheelTech</title>
+  <meta name="description" content="Get in touch with FlywheelTech. Start with a conversation about your AI GCC needs.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#35979C',
+            'accent-bright': '#57C1C6',
+            'accent-hover': '#2D8084',
+            'text-primary': '#212529',
+            'text-muted': '#343A40',
+            'text-dim': '#6C757D',
+            'bg-card': '#F8F9FA',
+            'bg-section': '#F6F6F6',
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white">
+
+  <!-- Navigation -->
+  <nav id="main-nav" class="fixed top-0 w-full z-50 h-16 bg-white border-b border-[rgba(222,226,230,0.6)]">
+    <div class="max-w-7xl mx-auto px-8 h-full flex items-center justify-between">
+      <a href="home.html" class="flex items-center">
+        <img src="assets/images/FlyWheel_Tech_Solutions_logo.png" alt="FlywheelTech" class="h-8 w-auto">
+      </a>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a href="home.html" class="text-sm font-medium text-text-primary hover:text-accent transition-colors">Home</a>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            Why Flywheel <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="why-flywheel/gcc-advantage.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">The GCC Advantage</a>
+            <a href="why-flywheel/why-india.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Why India</a>
+            <a href="why-flywheel/why-flywheeltech.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Why FlywheelTech</a>
+          </div>
+        </div>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            Services <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="services/consulting.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">GCC Consulting</a>
+            <a href="services/bot.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Build-Operate-Transfer</a>
+            <a href="services/managed-services.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Managed Services</a>
+            <a href="services/decision-operations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Decision Operations</a>
+          </div>
+        </div>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            Industries <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[280px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="industries/banking-mortgage.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Banking, Mortgages & Financial Services</a>
+            <a href="industries/fintech-proptech.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Fintech & Proptech</a>
+            <a href="industries/b2b-startups.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">B2B Startups</a>
+            <a href="industries/decision-operations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Document-Driven Decision Operations</a>
+          </div>
+        </div>
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            About Us <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="about/our-story.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Our Story</a>
+            <a href="about/leadership.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Leadership Team</a>
+            <a href="about/locations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Locations</a>
+          </div>
+        </div>
+        <a href="contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us →
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" class="md:hidden p-2">
+        <i data-lucide="menu" class="w-6 h-6 text-text-primary"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-white">
+    <div class="flex justify-between items-center p-6 border-b border-[rgba(222,226,230,0.6)]">
+      <img src="assets/images/FlyWheel_Tech_Solutions_logo.png" alt="FlywheelTech" class="h-8 w-auto">
+      <button id="mobile-menu-close" class="p-2">
+        <i data-lucide="x" class="w-6 h-6 text-text-primary"></i>
+      </button>
+    </div>
+    <div class="p-6 overflow-y-auto h-[calc(100vh-80px)]">
+      <a href="home.html" class="block py-4 text-lg font-medium text-text-primary border-b border-[rgba(222,226,230,0.6)]">Home</a>
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-trigger w-full flex justify-between items-center py-4 text-lg font-medium text-text-primary border-b border-[rgba(222,226,230,0.6)]">
+          Why Flywheel <i data-lucide="chevron-down" class="dropdown-icon w-5 h-5 transition-transform"></i>
+        </button>
+        <div class="mobile-dropdown-menu hidden pl-4">
+          <a href="why-flywheel/gcc-advantage.html" class="block py-3 text-base text-text-muted">The GCC Advantage</a>
+          <a href="why-flywheel/why-india.html" class="block py-3 text-base text-text-muted">Why India</a>
+          <a href="why-flywheel/why-flywheeltech.html" class="block py-3 text-base text-text-muted">Why FlywheelTech</a>
+        </div>
+      </div>
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-trigger w-full flex justify-between items-center py-4 text-lg font-medium text-text-primary border-b border-[rgba(222,226,230,0.6)]">
+          Services <i data-lucide="chevron-down" class="dropdown-icon w-5 h-5 transition-transform"></i>
+        </button>
+        <div class="mobile-dropdown-menu hidden pl-4">
+          <a href="services/consulting.html" class="block py-3 text-base text-text-muted">GCC Consulting</a>
+          <a href="services/bot.html" class="block py-3 text-base text-text-muted">Build-Operate-Transfer</a>
+          <a href="services/managed-services.html" class="block py-3 text-base text-text-muted">Managed Services</a>
+          <a href="services/decision-operations.html" class="block py-3 text-base text-text-muted">Decision Operations</a>
+        </div>
+      </div>
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-trigger w-full flex justify-between items-center py-4 text-lg font-medium text-text-primary border-b border-[rgba(222,226,230,0.6)]">
+          Industries <i data-lucide="chevron-down" class="dropdown-icon w-5 h-5 transition-transform"></i>
+        </button>
+        <div class="mobile-dropdown-menu hidden pl-4">
+          <a href="industries/banking-mortgage.html" class="block py-3 text-base text-text-muted">Banking, Mortgages & Financial Services</a>
+          <a href="industries/fintech-proptech.html" class="block py-3 text-base text-text-muted">Fintech & Proptech</a>
+          <a href="industries/b2b-startups.html" class="block py-3 text-base text-text-muted">B2B Startups</a>
+          <a href="industries/decision-operations.html" class="block py-3 text-base text-text-muted">Document-Driven Decision Operations</a>
+        </div>
+      </div>
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-trigger w-full flex justify-between items-center py-4 text-lg font-medium text-text-primary border-b border-[rgba(222,226,230,0.6)]">
+          About Us <i data-lucide="chevron-down" class="dropdown-icon w-5 h-5 transition-transform"></i>
+        </button>
+        <div class="mobile-dropdown-menu hidden pl-4">
+          <a href="about/our-story.html" class="block py-3 text-base text-text-muted">Our Story</a>
+          <a href="about/leadership.html" class="block py-3 text-base text-text-muted">Leadership Team</a>
+          <a href="about/locations.html" class="block py-3 text-base text-text-muted">Locations</a>
+        </div>
+      </div>
+      <a href="contact.html" class="block mt-6 text-center bg-accent text-white rounded-lg px-6 py-3 font-semibold">Talk to Us →</a>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="min-h-[40vh] bg-white flex items-center py-20 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(53,151,156,0.08)_0%,_transparent_60%)] pointer-events-none"></div>
+
+    <!-- abstract hero art · quiet layered horizon with a soft rising arc -->
+    <svg class="hero-art hero-art--drift" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="ha-horizon-fade" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="var(--color-accent-bright, #57C1C6)" stop-opacity="0.18"/>
+          <stop offset="1" stop-color="var(--color-accent, #35979C)" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <path d="M0 470 H1440 V760 H0 Z" fill="url(#ha-horizon-fade)"/>
+      <g stroke="var(--color-accent, #35979C)" stroke-width="1.5" stroke-opacity="0.4">
+        <path d="M0 470 Q720 430 1440 470"/>
+        <path d="M0 540 Q720 510 1440 540"/>
+        <path d="M0 610 Q720 588 1440 610"/>
+      </g>
+      <circle cx="1080" cy="300" r="120" stroke="var(--color-accent-bright, #57C1C6)" stroke-width="1.5" stroke-opacity="0.45"/>
+    </svg>
+    <div class="max-w-7xl mx-auto px-8 relative z-10 pt-16">
+      <span class="inline-block bg-[rgba(53,151,156,0.12)] text-accent text-xs font-semibold tracking-widest uppercase rounded-full px-3 py-1 mb-6">
+        GET IN TOUCH
+      </span>
+      <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-semibold text-text-primary leading-[1.1] max-w-3xl mb-4">
+        Let's Start with the Problem<br>You're Actually Trying to Solve.
+      </h1>
+      <p class="text-[clamp(1.1rem,2vw,1.4rem)] text-text-muted leading-relaxed max-w-2xl mb-4">
+        Whether you're at the decision stage, mid-build, or rethinking an approach that isn't working — the first conversation is about your situation, not our services.
+      </p>
+      <p class="text-lg text-text-muted max-w-2xl">
+        Every FlywheelTech engagement begins with a structured conversation about where you are, what you're trying to build, and what the right path forward looks like for your organisation. No commitment required.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-24 bg-bg-section">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <!-- Contact Form -->
+        <div>
+          <h2 class="text-2xl font-semibold text-text-primary mb-6">Send us a message</h2>
+          <form id="contact-form" class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-text-primary mb-2">Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full px-4 py-3 bg-white border border-[rgba(222,226,230,0.6)] rounded-lg focus:outline-none focus:border-accent transition-colors"
+              >
+            </div>
+            <div>
+              <label for="company" class="block text-sm font-medium text-text-primary mb-2">Company *</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                required
+                class="w-full px-4 py-3 bg-white border border-[rgba(222,226,230,0.6)] rounded-lg focus:outline-none focus:border-accent transition-colors"
+              >
+            </div>
+            <div>
+              <label for="role" class="block text-sm font-medium text-text-primary mb-2">Role *</label>
+              <input
+                type="text"
+                id="role"
+                name="role"
+                required
+                class="w-full px-4 py-3 bg-white border border-[rgba(222,226,230,0.6)] rounded-lg focus:outline-none focus:border-accent transition-colors"
+              >
+            </div>
+            <div>
+              <label for="region" class="block text-sm font-medium text-text-primary mb-2">Region *</label>
+              <select
+                id="region"
+                name="region"
+                required
+                class="w-full px-4 py-3 bg-white border border-[rgba(222,226,230,0.6)] rounded-lg focus:outline-none focus:border-accent transition-colors"
+              >
+                <option value="">Select a region</option>
+                <option value="Americas">Americas</option>
+                <option value="Europe">Europe</option>
+                <option value="India">India</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-text-primary mb-2">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                class="w-full px-4 py-3 bg-white border border-[rgba(222,226,230,0.6)] rounded-lg focus:outline-none focus:border-accent transition-colors resize-none"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-8 py-3 font-semibold text-[0.95rem] tracking-wider hover:bg-accent-hover transition-colors shadow-sm"
+            >
+              Send Message →
+            </button>
+            <p class="text-sm text-text-dim mt-4">
+              We respond within one business day. No sales deck will be sent.
+            </p>
+          </form>
+        </div>
+
+        <!-- Regional Contacts -->
+        <div>
+          <h2 class="text-2xl font-semibold text-text-primary mb-6">Reach us directly</h2>
+          <div class="space-y-8">
+            <!-- North America -->
+            <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+              <div class="flex items-start gap-3 mb-4">
+                <div class="text-accent mt-1">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-1">NORTH AMERICA</p>
+                  <p class="text-text-primary font-semibold text-lg">Silicon Valley</p>
+                </div>
+              </div>
+              <div class="text-text-muted text-sm space-y-2">
+                <p>Dublin, CA</p>
+                <p class="flex items-center gap-2 pt-2"><i data-lucide="phone" class="w-4 h-4 text-accent shrink-0"></i><a href="tel:+14083866734" class="text-accent hover:underline">+1 408-386-6734</a></p>
+                <p class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-accent shrink-0"></i><a href="mailto:muralidhar@flywheeltechsolutions.com" class="text-accent hover:underline">muralidhar@flywheeltechsolutions.com</a></p>
+              </div>
+            </div>
+
+            <!-- Europe -->
+            <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+              <div class="flex items-start gap-3 mb-4">
+                <div class="text-accent mt-1">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-1">EUROPE</p>
+                  <p class="text-text-primary font-semibold text-lg">Paris, France</p>
+                </div>
+              </div>
+              <div class="text-text-muted text-sm space-y-2">
+                <p class="flex items-center gap-2 pt-2"><i data-lucide="phone" class="w-4 h-4 text-accent shrink-0"></i><a href="tel:+33632270332" class="text-accent hover:underline">+33 6 32 27 03 32</a></p>
+                <p class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-accent shrink-0"></i><a href="mailto:suvir@flywheeltechsolutions.com" class="text-accent hover:underline">suvir@flywheeltechsolutions.com</a></p>
+              </div>
+            </div>
+
+            <!-- India -->
+            <div class="bg-white border border-[rgba(222,226,230,0.6)] rounded-xl p-6">
+              <div class="flex items-start gap-3 mb-4">
+                <div class="text-accent mt-1">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-1">INDIA</p>
+                  <p class="text-text-primary font-semibold text-lg">Pune</p>
+                </div>
+              </div>
+              <div class="text-text-muted text-sm space-y-2">
+                <p>69A, Florida Estate Society, Keshav Nagar Mundhwa</p>
+                <p>Pune 411036</p>
+                <p class="flex items-center gap-2 pt-2"><i data-lucide="mail" class="w-4 h-4 text-accent shrink-0"></i><a href="mailto:info@flywheeltechsolutions.com" class="text-accent hover:underline">info@flywheeltechsolutions.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-[rgba(222,226,230,0.6)] py-16">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div>
+          <img src="assets/images/FlyWheel_Tech_Solutions_logo.png" alt="FlywheelTech" class="h-8 w-auto mb-4">
+          <p class="text-sm text-text-muted leading-relaxed mb-2">AI capability you own. Built by people who've done it before.</p>
+          <p class="text-xs text-text-dim">Backed by the Vulcan Group.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Why Flywheel</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="why-flywheel/gcc-advantage.html" class="text-text-muted hover:text-accent transition-colors">The GCC Advantage</a></li>
+            <li><a href="why-flywheel/why-india.html" class="text-text-muted hover:text-accent transition-colors">Why India</a></li>
+            <li><a href="why-flywheel/why-flywheeltech.html" class="text-text-muted hover:text-accent transition-colors">Why FlywheelTech</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Services</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="services/consulting.html" class="text-text-muted hover:text-accent transition-colors">GCC Consulting</a></li>
+            <li><a href="services/bot.html" class="text-text-muted hover:text-accent transition-colors">Build-Operate-Transfer</a></li>
+            <li><a href="services/managed-services.html" class="text-text-muted hover:text-accent transition-colors">Managed Services</a></li>
+            <li><a href="services/decision-operations.html" class="text-text-muted hover:text-accent transition-colors">Decision Operations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Company</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="industries/banking-mortgage.html" class="text-text-muted hover:text-accent transition-colors">Industries</a></li>
+            <li><a href="about/our-story.html" class="text-text-muted hover:text-accent transition-colors">Our Story</a></li>
+            <li><a href="about/leadership.html" class="text-text-muted hover:text-accent transition-colors">Leadership Team</a></li>
+            <li><a href="about/locations.html" class="text-text-muted hover:text-accent transition-colors">Locations</a></li>
+            <li><a href="contact.html" class="text-text-muted hover:text-accent transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-[rgba(222,226,230,0.6)] text-center text-sm text-text-dim">
+        <p>&copy; 2026 FlywheelTech. All rights reserved. | <a href="mailto:info@flywheeltechsolutions.com" class="hover:text-accent transition-colors">info@flywheeltechsolutions.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

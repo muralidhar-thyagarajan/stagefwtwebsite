@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlywheelTech - AI Capability You Own</title>
+  <meta name="description" content="FlywheelTech helps mid-size BFSI companies build AI capability they actually own through purpose-built Global Capability Centers.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#35979C',
+            'accent-bright': '#57C1C6',
+            'accent-hover': '#2D8084',
+            'text-primary': '#212529',
+            'text-muted': '#343A40',
+            'text-dim': '#6C757D',
+            'bg-card': '#F8F9FA',
+            'bg-section': '#F6F6F6',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="home-page bg-white">
+
+  <!-- Navigation -->
+  <nav id="main-nav" class="fixed top-0 w-full z-50 h-16">
+    <div class="max-w-7xl mx-auto px-8 h-full flex items-center justify-between">
+      <!-- Logo -->
+      <a href="home.html" class="flex items-center">
+        <img
+          src="assets/images/FlyWheel_Tech_Solutions_logo.png"
+          alt="FlywheelTech"
+          class="h-8 w-auto"
+        >
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="home.html" class="text-sm font-medium text-text-primary hover:text-accent transition-colors">Home</a>
+
+        <!-- Why Flywheel Dropdown -->
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            Why Flywheel <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="why-flywheel/gcc-advantage.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">The GCC Advantage</a>
+            <a href="why-flywheel/why-india.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Why India</a>
+            <a href="why-flywheel/why-flywheeltech.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Why FlywheelTech</a>
+          </div>
+        </div>
+
+        <!-- Services Dropdown -->
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            Services <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="services/consulting.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">GCC Consulting</a>
+            <a href="services/bot.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Build-Operate-Transfer</a>
+            <a href="services/managed-services.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Managed Services</a>
+            <a href="services/decision-operations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Decision Operations</a>
+          </div>
+        </div>
+
+        <!-- Industries Dropdown -->
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            Industries <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[280px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="industries/banking-mortgage.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Banking, Mortgages & Financial Services</a>
+            <a href="industries/fintech-proptech.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Fintech & Proptech</a>
+            <a href="industries/b2b-startups.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">B2B Startups</a>
+            <a href="industries/decision-operations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Document-Driven Decision Operations</a>
+          </div>
+        </div>
+
+        <!-- About Us Dropdown -->
+        <div class="dropdown relative">
+          <button class="dropdown-trigger text-sm font-medium text-text-primary hover:text-accent transition-colors flex items-center gap-1">
+            About Us <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 bg-white border border-[rgba(222,226,230,0.6)] rounded-xl shadow-lg py-2 min-w-[220px] opacity-0 invisible translate-y-2 pointer-events-none transition-all duration-200">
+            <a href="about/our-story.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Our Story</a>
+            <a href="about/leadership.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Leadership Team</a>
+            <a href="about/locations.html" class="block px-4 py-3 text-sm text-text-primary hover:bg-bg-section hover:text-accent rounded-lg transition-colors">Locations</a>
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        <a href="contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-sm tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us →
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2">
+        <i data-lucide="menu" class="w-6 h-6 text-text-primary"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-white">
+    <div class="flex justify-between items-center p-6 border-b border-[rgba(222,226,230,0.6)]">
+      <img
+        src="assets/images/FlyWheel_Tech_Solutions_logo.png"
+        alt="FlywheelTech"
+        class="h-8 w-auto"
+      >
+      <button id="mobile-menu-close" class="p-2">
+        <i data-lucide="x" class="w-6 h-6 text-text-primary"></i>
+      </button>
+    </div>
+
+    <div class="p-6 overflow-y-auto h-[calc(100vh-80px)]">
+      <a href="home.html" class="block py-4 text-lg font-medium text-text-primary border-b border-[rgba(222,226,230,0.6)]">Home</a>
+
+      <!-- Mobile Why Flywheel -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-trigger w-full flex justify-between items-center py-4 text-lg font-medium text-text-primary border-b border-[rgba(222,226,230,0.6)]">
+          Why Flywheel <i data-lucide="chevron-down" class="dropdown-icon w-5 h-5 transition-transform"></i>
+        </button>
+        <div class="mobile-dropdown-menu hidden pl-4">
+          <a href="why-flywheel/gcc-advantage.html" class="block py-3 text-base text-text-muted">The GCC Advantage</a>
+          <a href="why-flywheel/why-india.html" class="block py-3 text-base text-text-muted">Why India</a>
+          <a href="why-flywheel/why-flywheeltech.html" class="block py-3 text-base text-text-muted">Why FlywheelTech</a>
+        </div>
+      </div>
+
+      <!-- Mobile Services -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-trigger w-full flex justify-between items-center py-4 text-lg font-medium text-text-primary border-b border-[rgba(222,226,230,0.6)]">
+          Services <i data-lucide="chevron-down" class="dropdown-icon w-5 h-5 transition-transform"></i>
+        </button>
+        <div class="mobile-dropdown-menu hidden pl-4">
+          <a href="services/consulting.html" class="block py-3 text-base text-text-muted">GCC Consulting</a>
+          <a href="services/bot.html" class="block py-3 text-base text-text-muted">Build-Operate-Transfer</a>
+          <a href="services/managed-services.html" class="block py-3 text-base text-text-muted">Managed Services</a>
+          <a href="services/decision-operations.html" class="block py-3 text-base text-text-muted">Decision Operations</a>
+        </div>
+      </div>
+
+      <!-- Mobile Industries -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-trigger w-full flex justify-between items-center py-4 text-lg font-medium text-text-primary border-b border-[rgba(222,226,230,0.6)]">
+          Industries <i data-lucide="chevron-down" class="dropdown-icon w-5 h-5 transition-transform"></i>
+        </button>
+        <div class="mobile-dropdown-menu hidden pl-4">
+          <a href="industries/banking-mortgage.html" class="block py-3 text-base text-text-muted">Banking, Mortgages & Financial Services</a>
+          <a href="industries/fintech-proptech.html" class="block py-3 text-base text-text-muted">Fintech & Proptech</a>
+          <a href="industries/b2b-startups.html" class="block py-3 text-base text-text-muted">B2B Startups</a>
+          <a href="industries/decision-operations.html" class="block py-3 text-base text-text-muted">Document-Driven Decision Operations</a>
+        </div>
+      </div>
+
+      <!-- Mobile About Us -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-trigger w-full flex justify-between items-center py-4 text-lg font-medium text-text-primary border-b border-[rgba(222,226,230,0.6)]">
+          About Us <i data-lucide="chevron-down" class="dropdown-icon w-5 h-5 transition-transform"></i>
+        </button>
+        <div class="mobile-dropdown-menu hidden pl-4">
+          <a href="about/our-story.html" class="block py-3 text-base text-text-muted">Our Story</a>
+          <a href="about/leadership.html" class="block py-3 text-base text-text-muted">Leadership Team</a>
+          <a href="about/locations.html" class="block py-3 text-base text-text-muted">Locations</a>
+        </div>
+      </div>
+
+      <a href="contact.html" class="block mt-6 text-center bg-accent text-white rounded-lg px-6 py-3 font-semibold">Talk to Us →</a>
+    </div>
+  </div>
+
+  <!-- Progress Indicator (Home page only) -->
+  <div id="progress-bar" class="hidden lg:block">
+    <div id="progress-indicator"></div>
+  </div>
+
+  <!-- Section 1: Opening Hero -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-white" data-section-line>
+    <!-- Parallax Background -->
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(53,151,156,0.08)_0%,_transparent_60%)] pointer-events-none" data-parallax="0.1"></div>
+    <!-- SVG-HOME-HERO-01 · expansive arcs sweeping out from the top-right + a soft gradient plane: an open horizon of possibility -->
+    <svg class="hero-art hero-art--drift" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="ha1-plane" x1="1" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="var(--color-accent-bright, #57C1C6)" stop-opacity="0.35"/>
+          <stop offset="1" stop-color="var(--color-accent, #35979C)" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <!-- soft translucent plane anchored in the corner -->
+      <path d="M1440 0 L1440 420 Q1120 360 1010 0 Z" fill="url(#ha1-plane)"/>
+      <!-- concentric flowing arcs (full circles clip to quarter-arcs at the corner) -->
+      <g stroke="var(--color-accent, #35979C)" stroke-width="1.5" stroke-opacity="0.6">
+        <circle cx="1440" cy="0" r="240"/>
+        <circle cx="1440" cy="0" r="400"/>
+        <circle cx="1440" cy="0" r="560"/>
+        <circle cx="1440" cy="0" r="720"/>
+      </g>
+      <!-- single gentle sine sweeping across the lower field -->
+      <path d="M-40 600 Q420 520 760 600 T1480 470" stroke="var(--color-accent-bright, #57C1C6)" stroke-width="1.5" stroke-opacity="0.5"/>
+    </svg>
+
+    <div class="max-w-7xl mx-auto px-8 relative z-10 pt-16">
+      <!-- Section Label -->
+      <span class="inline-block bg-[rgba(53,151,156,0.12)] text-accent text-xs font-semibold tracking-widest uppercase rounded-full px-3 py-1 mb-6" data-reveal="fade">
+        FLYWHEEL TECH
+      </span>
+
+      <!-- Hero Headline -->
+      <h1 class="text-[clamp(2.5rem,5vw,4rem)] leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up">
+        <span class="hero-headline-light block">AI Is Deciding Who Survives.</span>
+        <span class="hero-headline-bold block">The Question Is Whether You're Building Something That's Yours.</span>
+      </h1>
+
+      <!-- Hero Sub-headline -->
+      <p class="text-[clamp(1.1rem,2vw,1.5rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade-up" style="transition-delay: 0.15s">
+        Mid-size BFSI companies and fintech founders have a narrow window to build AI capability they own — before the window closes.
+      </p>
+
+      <!-- Hero Body -->
+      <div class="max-w-3xl space-y-6 mb-12 text-[clamp(0.95rem,1.5vw,1.1rem)] text-text-muted leading-relaxed" data-reveal="fade-up" style="transition-delay: 0.15s">
+        <p>The race is real. Institutions without production-grade AI face a significant and growing cost disadvantage against AI-native competitors. The tools are widely available. The talent exists. The models perform. And yet the vast majority of enterprise AI spend fails to deliver measurable business value.</p>
+
+        <p>Speed is not the problem. Architecture is. The companies moving fastest on AI are also accumulating the most fragile positions — vendor-dependent, IP-light, and increasingly exposed to the exact disruptions their AI programs were supposed to prevent.</p>
+
+        <p>There is a structural answer to this. It is not a vendor. It is not outsourcing. It is a focused, captive AI capability built inside your organisation — designed to compound in value, not in dependency.</p>
+      </div>
+
+      <!-- Stat Strip -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl" data-reveal="fade-up" style="transition-delay: 0.4s">
+        <div class="bg-bg-card border border-[rgba(222,226,230,0.6)] rounded-xl p-6" data-stagger>
+          <div class="font-sans text-4xl font-bold text-accent stat-glow">Significant</div>
+          <div class="text-sm text-text-muted mt-2 leading-snug">Cost disadvantage for non-AI institutions vs. AI-native competitors</div>
+        </div>
+        <div class="bg-bg-card border border-[rgba(222,226,230,0.6)] rounded-xl p-6" data-stagger>
+          <div class="font-sans text-4xl font-bold text-accent stat-glow">80%+</div>
+          <div class="text-sm text-text-muted mt-2 leading-snug">Enterprise AI spend fails to deliver measurable business value</div>
+        </div>
+        <div class="bg-bg-card border border-[rgba(222,226,230,0.6)] rounded-xl p-6" data-stagger>
+          <div class="font-sans text-4xl font-bold text-accent stat-glow">40%</div>
+          <div class="text-sm text-text-muted mt-2 leading-snug">New mid-market GCC setups now use Build-Operate-Transfer</div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <a href="#section-2" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-[0.95rem] tracking-wider hover:bg-accent-hover transition-colors shadow-sm" data-reveal="fade" style="transition-delay: 0.5s">
+        Start with the Problem →
+      </a>
+    </div>
+
+    <!-- Scroll Cue -->
+    <a href="#section-2" class="scroll-cue absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-accent hover:text-accent-hover transition-colors" aria-label="Scroll down">
+      <span class="text-xs font-semibold tracking-widest uppercase">Scroll</span>
+      <i data-lucide="chevron-down" class="w-6 h-6"></i>
+    </a>
+
+    <!-- Section transition line -->
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-7xl px-8">
+      <div class="section-line"></div>
+    </div>
+  </section>
+
+  <!-- Section 2: The Trap -->
+  <section id="section-2" class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-bg-section" data-section-line>
+    <!-- Parallax Background -->
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(53,151,156,0.06)_0%,_transparent_60%)] pointer-events-none" data-parallax="0.15"></div>
+    <!-- SVG-HOME-HERO-02 · concentric ripples radiating from the lower-left with an inward-tightening coil: momentum that quietly pulls toward a trap -->
+    <svg class="hero-art hero-art--sway" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true" focusable="false">
+      <g stroke="var(--color-accent, #35979C)" stroke-width="1.5" stroke-opacity="0.55">
+        <circle cx="0" cy="760" r="200"/>
+        <circle cx="0" cy="760" r="340"/>
+        <circle cx="0" cy="760" r="480"/>
+        <circle cx="0" cy="760" r="620"/>
+      </g>
+      <!-- coil winding inward -->
+      <path d="M360 560 C360 470 230 470 230 560 C230 644 338 644 338 572 C338 520 272 520 274 564" stroke="var(--color-accent-bright, #57C1C6)" stroke-width="1.5" stroke-opacity="0.6"/>
+    </svg>
+
+    <div class="max-w-7xl mx-auto px-8 relative z-10">
+      <!-- Section Label -->
+      <span class="inline-block bg-[rgba(53,151,156,0.12)] text-accent text-xs font-semibold tracking-widest uppercase rounded-full px-3 py-1 mb-6" data-reveal="fade">
+        THE PROBLEM
+      </span>
+
+      <!-- Hero Headline -->
+      <h2 class="text-[clamp(2.5rem,5vw,4rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up">
+        <span class="hero-headline-light block">Speed Without Foundation</span>
+        <span class="hero-headline-bold block">Is the Trap Everyone Is Falling Into.</span>
+      </h2>
+
+      <!-- Hero Sub-headline -->
+      <p class="text-[clamp(1.1rem,2vw,1.5rem)] text-text-muted leading-relaxed max-w-3xl mb-12" data-reveal="fade-up" style="transition-delay: 0.15s">
+        Foundation models are fast to start. They are expensive, fragile, and difficult to exit at scale.
+      </p>
+
+      <!-- Three Columns -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div data-reveal="fade-left" data-stagger>
+          <h3 class="text-xl font-semibold text-text-primary mb-4">Vendor Risk</h3>
+          <p class="text-[0.95rem] text-text-muted leading-relaxed">
+            Building on foundation model APIs is the fastest path to an AI pilot. It is also the fastest path to a position you cannot easily escape. Vendor pricing is currently subsidised to drive adoption. Once your workflows are embedded, pricing will reset. The institutions with the greatest AI exposure will have the least leverage when it does.
+          </p>
+        </div>
+        <div data-reveal="fade-left" data-stagger>
+          <h3 class="text-xl font-semibold text-text-primary mb-4">The Operating Model Misconception</h3>
+          <p class="text-[0.95rem] text-text-muted leading-relaxed">
+            AI does not eliminate operational headcount. In regulated industries, it radically shifts where effort is required — away from execution and toward oversight, orchestration, governance, and optimisation. Your AI-enabled enterprise will need ten distinct operational functions that do not exist in your current org chart, none of which map to a traditional developer, engineer, or QA team.
+          </p>
+        </div>
+        <div data-reveal="fade-left" data-stagger>
+          <h3 class="text-xl font-semibold text-text-primary mb-4">The New P&L</h3>
+          <p class="text-[0.95rem] text-text-muted leading-relaxed">
+            Four structural line items change simultaneously: your labour composition, your general and administrative costs, token and infrastructure spend — an entirely new operating line with no historical benchmark — and compliance costs that now have to account for decision provenance in a way they never did before.
+          </p>
+        </div>
+      </div>
+
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-4 items-stretch sm:items-start max-w-full" data-reveal="fade" style="transition-delay: 0.3s">
+        <a href="#section-3" class="inline-flex items-center justify-center gap-2 border-2 border-accent text-accent rounded-lg px-6 py-3 font-semibold text-[0.95rem] tracking-wider hover:bg-[rgba(53,151,156,0.08)] transition-colors">
+          Discover the Solution →
+        </a>
+        <a href="contact.html" class="inline-flex items-center justify-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-[0.95rem] tracking-wider hover:bg-accent-hover transition-colors shadow-sm">
+          Talk to Us About Your Situation →
+        </a>
+      </div>
+    </div>
+
+    <!-- Section transition line -->
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-7xl px-8">
+      <div class="section-line"></div>
+    </div>
+  </section>
+
+  <!-- Section 3: The Answer -->
+  <section id="section-3" class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-white" data-section-line>
+    <!-- Parallax Background -->
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(53,151,156,0.08)_0%,_transparent_60%)] pointer-events-none" data-parallax="0.2"></div>
+    <!-- SVG-HOME-HERO-03 · an unfurling growth spiral with branching buds: capability that compounds and grows outward from a single seed -->
+    <svg class="hero-art hero-art--drift" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true" focusable="false">
+      <!-- expanding growth spiral -->
+      <path d="M170 200 C170 150 250 150 250 210 C250 290 140 300 100 230 C50 140 180 70 290 90 C420 114 470 270 360 360" stroke="var(--color-accent, #35979C)" stroke-width="1.5" stroke-opacity="0.6"/>
+      <!-- branching shoots -->
+      <g stroke="var(--color-accent-bright, #57C1C6)" stroke-width="1.5" stroke-opacity="0.55">
+        <path d="M360 360 L420 412"/>
+        <path d="M290 90 L350 58"/>
+        <path d="M250 210 L322 210"/>
+      </g>
+      <!-- buds -->
+      <g fill="var(--color-accent-bright, #57C1C6)" fill-opacity="0.7">
+        <circle cx="424" cy="416" r="5"/>
+        <circle cx="354" cy="54" r="5"/>
+        <circle cx="326" cy="210" r="5"/>
+      </g>
+    </svg>
+
+    <div class="max-w-7xl mx-auto px-8 relative z-10">
+      <!-- Section Label -->
+      <span class="inline-block bg-[rgba(53,151,156,0.12)] text-accent text-xs font-semibold tracking-widest uppercase rounded-full px-3 py-1 mb-6" data-reveal="fade">
+        THE STRUCTURAL ANSWER
+      </span>
+
+      <!-- Hero Headline -->
+      <h2 class="text-[clamp(2.5rem,5vw,4rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up">
+        <span class="hero-headline-light block">The Answer Is a Capability You Own —</span>
+        <span class="hero-headline-bold block">Built by People Who Have Done It Before.</span>
+      </h2>
+
+      <!-- Hero Sub-headline -->
+      <p class="text-[clamp(1.1rem,2vw,1.5rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade-up" style="transition-delay: 0.15s">
+        A Global Capability Center, structured correctly for AI, converts the transformation imperative from a risk into a compounding asset.
+      </p>
+
+      <!-- Hero Body -->
+      <div class="max-w-3xl space-y-6 mb-12 text-[clamp(0.95rem,1.5vw,1.1rem)] text-text-muted leading-relaxed" data-reveal="fade-up" style="transition-delay: 0.25s">
+        <p>The world's largest financial institutions have spent decades building AI capability inside their own Global Capability Centers. Mid-size BFSI companies and fintech founders have never had access to that model — at a scale and cost structure that works for them. Until now.</p>
+
+        <p>A purpose-built AI GCC gives you what foundation model vendors and outsourcing partners structurally cannot: talent that accumulates inside your organisation, IP that belongs to you, and models you can explain to a regulator without calling the vendor.</p>
+
+        <p>The Build-Operate-Transfer model — now the mainstream path for mid-market firms, having grown to approximately 40% of new GCC setups — makes the entry point accessible. You do not need to build from scratch. You need the right partner: one who has operated this at scale, in a regulated industry, and whose only commercial incentive is to make you independent.</p>
+      </div>
+
+      <!-- SVG-HOME-DIAGRAM-FLYWHEEL · signature brand diagram: owned Talent, IP and Governance ride a turning flywheel that compounds into accelerating AI capability you own -->
+      <div class="max-w-3xl mb-12" data-graphic="flywheel-compounding-diagram" data-reveal="fade-up">
+        <svg class="flywheel-diagram" viewBox="0 0 600 560" fill="none" role="img" aria-label="Flywheel diagram: owned talent, IP and governance compound into accelerating AI capability you own.">
+          <!-- spokes from hub to each node -->
+          <g stroke="var(--color-accent, #35979C)" stroke-width="1.5" stroke-opacity="0.35">
+            <path d="M300 250 L300 60"/>
+            <path d="M300 250 L130 348"/>
+            <path d="M300 250 L470 348"/>
+          </g>
+
+          <!-- rotating outer ring + direction arrows convey perpetual motion -->
+          <g class="fw-motion">
+            <circle cx="300" cy="250" r="210" stroke="var(--color-accent-bright, #57C1C6)" stroke-width="2" stroke-opacity="0.7" stroke-dasharray="2 12" stroke-linecap="round"/>
+            <g stroke="var(--color-accent, #35979C)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.8">
+              <path d="M221 34 A230 230 0 0 1 379 34"/>
+              <path d="M374 28 L379 34 L373 40"/>
+              <path d="M527 290 A230 230 0 0 1 448 426"/>
+              <path d="M455 432 L448 426 L441 432"/>
+              <path d="M152 426 A230 230 0 0 1 74 290"/>
+              <path d="M80 296 L74 290 L80 284"/>
+            </g>
+          </g>
+
+          <!-- three owned pillars on the wheel -->
+          <g>
+            <circle cx="300" cy="60" r="52" fill="var(--color-bg-card, #F8F9FA)" stroke="var(--color-accent, #35979C)" stroke-width="2"/>
+            <text class="fw-node-label" x="300" y="65" text-anchor="middle" fill="var(--color-text-primary, #212529)">Talent</text>
+            <circle cx="130" cy="348" r="52" fill="var(--color-bg-card, #F8F9FA)" stroke="var(--color-accent, #35979C)" stroke-width="2"/>
+            <text class="fw-node-label" x="130" y="353" text-anchor="middle" fill="var(--color-text-primary, #212529)">IP</text>
+            <circle cx="470" cy="348" r="52" fill="var(--color-bg-card, #F8F9FA)" stroke="var(--color-accent, #35979C)" stroke-width="2"/>
+            <text class="fw-node-label" x="470" y="353" text-anchor="middle" fill="var(--color-text-primary, #212529)">Governance</text>
+          </g>
+
+          <!-- hub: the compounding capability -->
+          <circle cx="300" cy="250" r="70" fill="var(--color-accent-glow, rgba(53,151,156,0.15))" stroke="var(--color-accent, #35979C)" stroke-width="2.5"/>
+          <text class="fw-hub-label" x="300" y="244" text-anchor="middle" fill="var(--color-accent, #35979C)">AI Capability</text>
+          <text class="fw-hub-label" x="300" y="266" text-anchor="middle" fill="var(--color-accent, #35979C)">You Own</text>
+
+          <!-- caption -->
+          <text class="fw-caption" x="300" y="520" text-anchor="middle" fill="var(--color-text-dim, #6C757D)">Owned talent, IP &amp; governance compound</text>
+          <text class="fw-caption" x="300" y="540" text-anchor="middle" fill="var(--color-text-dim, #6C757D)">into accelerating capability — turn after turn.</text>
+        </svg>
+      </div>
+
+      <!-- Three Feature Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-bg-card border border-[rgba(222,226,230,0.6)] rounded-xl p-6 card-hover" data-reveal="fade-left" data-stagger>
+          <div class="text-accent mb-3">
+            <i data-lucide="lock" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-semibold text-text-primary text-lg mb-2">Own the IP</h3>
+          <p class="text-sm text-text-muted leading-relaxed">Models, processes, and institutional knowledge transfer fully to you. No vendor retains your data or your capability.</p>
+        </div>
+        <div class="bg-bg-card border border-[rgba(222,226,230,0.6)] rounded-xl p-6 card-hover" data-reveal="fade-left" data-stagger>
+          <div class="text-accent mb-3">
+            <i data-lucide="users" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-semibold text-text-primary text-lg mb-2">Own the Team</h3>
+          <p class="text-sm text-text-muted leading-relaxed">Every team member goes onto your payroll. Headcount is your asset — not a vendor's revenue line.</p>
+        </div>
+        <div class="bg-bg-card border border-[rgba(222,226,230,0.6)] rounded-xl p-6 card-hover" data-reveal="fade-left" data-stagger>
+          <div class="text-accent mb-3">
+            <i data-lucide="clipboard-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-semibold text-text-primary text-lg mb-2">Own the Governance</h3>
+          <p class="text-sm text-text-muted leading-relaxed">Explainability, HITL, decision provenance — built in from day one, not retrofitted for a regulator.</p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <a href="why-flywheel/gcc-advantage.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-[0.95rem] tracking-wider hover:bg-accent-hover transition-colors shadow-sm" data-reveal="fade" style="transition-delay: 0.4s">
+        How It Works →
+      </a>
+    </div>
+
+    <!-- Section transition line -->
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-7xl px-8">
+      <div class="section-line"></div>
+    </div>
+  </section>
+
+  <!-- Section 4: Proof of Standing -->
+  <section id="section-4" class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-bg-section" data-section-line>
+    <!-- Parallax Background -->
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(53,151,156,0.06)_0%,_transparent_60%)] pointer-events-none" data-parallax="0.25"></div>
+    <!-- SVG-HOME-HERO-04 · clustered, gently overlapping soft hexagons: proven structure assembled at scale, panel by panel -->
+    <svg class="hero-art hero-art--sway" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="ha4-fill" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="var(--color-accent-bright, #57C1C6)" stop-opacity="0.18"/>
+          <stop offset="1" stop-color="var(--color-accent, #35979C)" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <!-- translucent filled hexagon -->
+      <path d="M1180 380 L1300 440 L1310 575 L1200 660 L1075 605 L1062 470 Z" fill="url(#ha4-fill)" stroke="var(--color-accent, #35979C)" stroke-width="1.5" stroke-opacity="0.5"/>
+      <!-- outline hexagons overlapping it -->
+      <g stroke="var(--color-accent-bright, #57C1C6)" stroke-width="1.5" stroke-opacity="0.5">
+        <path d="M1320 470 L1430 525 L1438 655 L1330 735 L1220 675 L1222 545 Z"/>
+        <path d="M1040 560 L1130 600 L1135 690 L1050 735 L965 690 L962 605 Z"/>
+      </g>
+      <!-- soft accent dots -->
+      <g fill="var(--color-accent, #35979C)" fill-opacity="0.35">
+        <circle cx="1300" cy="600" r="4"/>
+        <circle cx="1120" cy="520" r="4"/>
+      </g>
+    </svg>
+
+    <div class="max-w-7xl mx-auto px-8 relative z-10">
+      <!-- Section Label -->
+      <span class="inline-block bg-[rgba(53,151,156,0.12)] text-accent text-xs font-semibold tracking-widest uppercase rounded-full px-3 py-1 mb-6" data-reveal="fade">
+        OUR TRACK RECORD
+      </span>
+
+      <!-- Hero Headline -->
+      <h2 class="text-[clamp(2.5rem,5vw,4rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up">
+        <span class="hero-headline-light block">We Built This. At Scale.</span>
+        <span class="hero-headline-bold block">In Your Industry. Under Regulatory Scrutiny.</span>
+      </h2>
+
+      <!-- Hero Sub-headline -->
+      <p class="text-[clamp(1.1rem,2vw,1.5rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade-up" style="transition-delay: 0.15s">
+        The FlywheelTech founding team spent over a decade building and operating an AI-focused GCC for a US fintech that processed 30% of American home loans — serving 150+ US customers.
+      </p>
+
+      <!-- Hero Body -->
+      <div class="max-w-3xl space-y-6 mb-12 text-[clamp(0.95rem,1.5vw,1.1rem)] text-text-muted leading-relaxed" data-reveal="fade-up" style="transition-delay: 0.25s">
+        <p>They started with two people and a mandate. They ended with over 2,000 employees — six of the top ten US mortgage originators and servicers in their customer list. Every model decision was auditable. Every architecture choice was made under live regulatory scrutiny. When the company was acquired, the GCC was the asset.</p>
+
+        <p>That institutional knowledge — how to build an innovation culture across a 9.5-hour time zone gap, how to structure AI capability that survives regulatory audit, how to design an organisation its parent company can genuinely own and operate — is not available in a consulting report. It is operational knowledge, earned over time, under real conditions.</p>
+
+        <p>FlywheelTech was founded to make that knowledge available to the next generation of BFSI and fintech companies navigating exactly the same challenge.</p>
+      </div>
+
+      <!-- Proof Stats -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 max-w-5xl">
+        <div class="bg-bg-card border border-[rgba(222,226,230,0.6)] rounded-xl p-6 text-center" data-reveal="scale" data-stagger>
+          <div class="font-sans text-4xl font-bold text-accent stat-glow">2,000+</div>
+          <div class="text-sm text-text-muted mt-2 leading-snug">Team members built and operated</div>
+        </div>
+        <div class="bg-bg-card border border-[rgba(222,226,230,0.6)] rounded-xl p-6 text-center" data-reveal="scale" data-stagger>
+          <div class="font-sans text-4xl font-bold text-accent stat-glow">30%</div>
+          <div class="text-sm text-text-muted mt-2 leading-snug">US home loans processed</div>
+        </div>
+        <div class="bg-bg-card border border-[rgba(222,226,230,0.6)] rounded-xl p-6 text-center" data-reveal="scale" data-stagger>
+          <div class="font-sans text-4xl font-bold text-accent stat-glow">150+</div>
+          <div class="text-sm text-text-muted mt-2 leading-snug">US customers served</div>
+        </div>
+        <div class="bg-bg-card border border-[rgba(222,226,230,0.6)] rounded-xl p-6 text-center" data-reveal="scale" data-stagger>
+          <div class="font-sans text-4xl font-bold text-accent stat-glow">6 of 10</div>
+          <div class="text-sm text-text-muted mt-2 leading-snug">Top US mortgage originators and servicers</div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <a href="about/leadership.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-[0.95rem] tracking-wider hover:bg-accent-hover transition-colors shadow-sm" data-reveal="fade" style="transition-delay: 0.4s">
+        Meet the Team →
+      </a>
+    </div>
+
+    <!-- Section transition line -->
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-7xl px-8">
+      <div class="section-line"></div>
+    </div>
+  </section>
+
+  <!-- Section 5: Global Presence -->
+  <section id="section-5" class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 bg-white">
+    <!-- Parallax Background -->
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(53,151,156,0.08)_0%,_transparent_60%)] pointer-events-none" data-parallax="0.3"></div>
+    <!-- SVG-HOME-HERO-05 · a minimal globe with latitude/meridian arcs, a quiet horizon line and three connected points: Americas, Europe, India — one world -->
+    <svg class="hero-art hero-art--drift" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true" focusable="false">
+      <g stroke="var(--color-accent, #35979C)" stroke-width="1.5" stroke-opacity="0.5">
+        <circle cx="720" cy="380" r="300"/>
+        <ellipse cx="720" cy="380" rx="300" ry="92"/>
+        <ellipse cx="720" cy="380" rx="118" ry="300"/>
+      </g>
+      <!-- quiet horizon line -->
+      <path d="M120 560 H1320" stroke="var(--color-accent-bright, #57C1C6)" stroke-width="1.5" stroke-opacity="0.35"/>
+      <!-- three located points -->
+      <g stroke="var(--color-accent-bright, #57C1C6)" stroke-width="1.5" stroke-opacity="0.55">
+        <circle cx="520" cy="360" r="12"/>
+        <circle cx="760" cy="250" r="12"/>
+        <circle cx="900" cy="430" r="12"/>
+      </g>
+      <g fill="var(--color-accent, #35979C)" fill-opacity="0.7">
+        <circle cx="520" cy="360" r="5"/>
+        <circle cx="760" cy="250" r="5"/>
+        <circle cx="900" cy="430" r="5"/>
+      </g>
+    </svg>
+
+    <div class="max-w-7xl mx-auto px-8 relative z-10">
+      <!-- Section Label -->
+      <span class="inline-block bg-[rgba(53,151,156,0.12)] text-accent text-xs font-semibold tracking-widest uppercase rounded-full px-3 py-1 mb-6" data-reveal="fade">
+        GLOBAL OPERATIONS
+      </span>
+
+      <!-- Hero Headline -->
+      <h2 class="text-[clamp(2.5rem,5vw,4rem)] font-semibold text-text-primary leading-[1.1] max-w-4xl mb-6" data-reveal="fade-up">
+        <span class="hero-headline-light block">Americas. Europe. India.</span>
+        <span class="hero-headline-bold block">One Team. One Methodology.</span>
+      </h2>
+
+      <!-- Hero Sub-headline -->
+      <p class="text-[clamp(1.1rem,2vw,1.5rem)] text-text-muted leading-relaxed max-w-3xl mb-8" data-reveal="fade-up" style="transition-delay: 0.15s">
+        We are a global company with no single-geography bias — present where our clients need us, operating with the same standards everywhere.
+      </p>
+
+      <!-- Hero Body -->
+      <div class="max-w-3xl mb-12 text-[clamp(0.95rem,1.5vw,1.1rem)] text-text-muted leading-relaxed" data-reveal="fade-up" style="transition-delay: 0.25s">
+        <p>FlywheelTech operates across North America, Europe, and India. Our client engagements are led from Silicon Valley and Paris. Our India operations are anchored in Pune, backed by over 50 years of operating heritage through the Vulcan Group. We are not a multinational. We are a globally distributed team with a FlywheelTech culture.</p>
+      </div>
+
+      <!-- Location Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl">
+        <div class="bg-bg-card border border-[rgba(222,226,230,0.6)] rounded-xl p-6" data-reveal="fade-left" data-stagger>
+          <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-2">NORTH AMERICA</p>
+          <p class="text-text-primary font-semibold text-lg mb-3">Silicon Valley, CA</p>
+          <div class="text-accent">
+            <i data-lucide="map-pin" class="w-5 h-5"></i>
+          </div>
+        </div>
+        <div class="bg-bg-card border border-[rgba(222,226,230,0.6)] rounded-xl p-6" data-reveal="fade-left" data-stagger>
+          <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-2">EUROPE</p>
+          <p class="text-text-primary font-semibold text-lg mb-3">Paris, France</p>
+          <div class="text-accent">
+            <i data-lucide="map-pin" class="w-5 h-5"></i>
+          </div>
+        </div>
+        <div class="bg-bg-card border border-[rgba(222,226,230,0.6)] rounded-xl p-6" data-reveal="fade-left" data-stagger>
+          <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-2">INDIA</p>
+          <p class="text-text-primary font-semibold text-lg mb-3">Pune</p>
+          <div class="text-accent">
+            <i data-lucide="map-pin" class="w-5 h-5"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <a href="contact.html" class="inline-flex items-center gap-2 bg-accent text-white rounded-lg px-6 py-3 font-semibold text-[0.95rem] tracking-wider hover:bg-accent-hover transition-colors shadow-sm" data-reveal="fade" style="transition-delay: 0.4s">
+        Get in Touch →
+      </a>
+    </div>
+  </section>
+
+  <!-- Page Navigation -->
+  <section class="py-12 bg-white border-t border-[rgba(222,226,230,0.6)]">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="flex justify-end">
+        <a href="why-flywheel/gcc-advantage.html" class="inline-flex items-center gap-2 text-accent hover:text-accent-hover transition-colors text-lg font-medium group">
+          <span>Next: Learn Why a GCC Is the Answer</span>
+          <span class="transform transition-transform group-hover:translate-x-1">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer CTA Strip -->
+  <section class="py-16 bg-accent">
+    <div class="max-w-7xl mx-auto px-8 text-center">
+      <h2 class="text-3xl font-semibold text-white mb-3">Ready to build AI capability you actually own?</h2>
+      <p class="text-white/80 mb-8 text-lg">Start with a conversation about your situation. No commitment required.</p>
+      <a href="contact.html" class="inline-block bg-white text-accent font-semibold rounded-lg px-8 py-3 hover:bg-bg-section transition-colors shadow-sm">
+        Talk to Us →
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-[rgba(222,226,230,0.6)] py-16">
+    <div class="max-w-7xl mx-auto px-8">
+      <!-- Main Footer Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <!-- Column 1: Brand -->
+        <div>
+          <img
+            src="assets/images/FlyWheel_Tech_Solutions_logo.png"
+            alt="FlywheelTech"
+            class="h-8 w-auto mb-4"
+          >
+          <p class="text-sm text-text-muted leading-relaxed mb-2">AI capability you own. Built by people who've done it before.</p>
+          <p class="text-xs text-text-dim">Backed by the Vulcan Group.</p>
+        </div>
+
+        <!-- Column 2: Why Flywheel -->
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Why Flywheel</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="why-flywheel/gcc-advantage.html" class="text-text-muted hover:text-accent transition-colors">The GCC Advantage</a></li>
+            <li><a href="why-flywheel/why-india.html" class="text-text-muted hover:text-accent transition-colors">Why India</a></li>
+            <li><a href="why-flywheel/why-flywheeltech.html" class="text-text-muted hover:text-accent transition-colors">Why FlywheelTech</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Services -->
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Services</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="services/consulting.html" class="text-text-muted hover:text-accent transition-colors">GCC Consulting</a></li>
+            <li><a href="services/bot.html" class="text-text-muted hover:text-accent transition-colors">Build-Operate-Transfer</a></li>
+            <li><a href="services/managed-services.html" class="text-text-muted hover:text-accent transition-colors">Managed Services</a></li>
+            <li><a href="services/decision-operations.html" class="text-text-muted hover:text-accent transition-colors">Decision Operations</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Company -->
+        <div>
+          <h3 class="font-semibold text-text-primary mb-4">Company</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="industries/banking-mortgage.html" class="text-text-muted hover:text-accent transition-colors">Industries</a></li>
+            <li><a href="about/our-story.html" class="text-text-muted hover:text-accent transition-colors">Our Story</a></li>
+            <li><a href="about/leadership.html" class="text-text-muted hover:text-accent transition-colors">Leadership Team</a></li>
+            <li><a href="about/locations.html" class="text-text-muted hover:text-accent transition-colors">Locations</a></li>
+            <li><a href="contact.html" class="text-text-muted hover:text-accent transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 border-t border-[rgba(222,226,230,0.6)] text-center text-sm text-text-dim">
+        <p>&copy; 2026 FlywheelTech. All rights reserved. | <a href="mailto:info@flywheeltechsolutions.com" class="hover:text-accent transition-colors">info@flywheeltechsolutions.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

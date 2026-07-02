@@ -1,0 +1,333 @@
+/* FlywheelTech - Custom CSS */
+
+/* ===== CSS VARIABLES ===== */
+:root {
+  --color-bg-primary: #FFFFFF;
+  --color-bg-section: #F6F6F6;
+  --color-bg-card: #F8F9FA;
+  --color-bg-nav: #E8F5F4;
+  --color-accent: #35979C;
+  --color-accent-bright: #57C1C6;
+  --color-accent-glow: rgba(53, 151, 156, 0.15);
+  --color-text-primary: #212529;
+  --color-text-muted: #343A40;
+  --color-text-dim: #6C757D;
+  --color-border: rgba(222, 226, 230, 0.6);
+  --color-cta-bg: #35979C;
+  --color-cta-text: #FFFFFF;
+  --color-cta-hover: #2D8084;
+}
+
+/* ===== FONTS ===== */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  color: var(--color-text-primary);
+}
+
+/* ===== SCROLL REVEAL ANIMATIONS ===== */
+[data-reveal] {
+  opacity: 0;
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+[data-reveal].revealed {
+  opacity: 1;
+}
+
+/* Fade up */
+[data-reveal="fade-up"] {
+  transform: translateY(40px);
+}
+
+[data-reveal="fade-up"].revealed {
+  transform: translateY(0);
+}
+
+/* Fade in */
+[data-reveal="fade"] {
+  transform: none;
+}
+
+[data-reveal="fade"].revealed {
+  opacity: 1;
+}
+
+/* Fade from left */
+[data-reveal="fade-left"] {
+  transform: translateX(-20px);
+}
+
+[data-reveal="fade-left"].revealed {
+  transform: translateX(0);
+}
+
+/* Scale */
+[data-reveal="scale"] {
+  transform: scale(0.95);
+}
+
+[data-reveal="scale"].revealed {
+  transform: scale(1);
+}
+
+/* Stagger children */
+[data-stagger] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+[data-stagger].revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== SECTION TRANSITION LINES ===== */
+.section-line {
+  width: 0;
+  height: 1px;
+  background: var(--color-accent);
+  transition: width 1.2s linear;
+}
+
+/* ===== NAVIGATION ===== */
+#main-nav {
+  background: var(--color-bg-nav);
+  transition: all 0.3s ease;
+}
+
+#main-nav.scrolled {
+  background: var(--color-bg-nav);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Dropdown animations */
+.dropdown-menu {
+  background: var(--color-bg-nav) !important;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out, visibility 0.2s ease-out;
+  pointer-events: none;
+}
+
+.dropdown-menu.pointer-events-auto {
+  pointer-events: auto;
+}
+
+.dropdown-menu a {
+  pointer-events: auto;
+}
+
+/* ===== PROGRESS INDICATOR ===== */
+#progress-bar {
+  position: fixed;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 33vh;
+  background: var(--color-border);
+  z-index: 40;
+}
+
+#progress-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: var(--color-accent);
+  transition: height 0.1s linear;
+}
+
+/* ===== PARALLAX BACKGROUNDS ===== */
+[data-parallax] {
+  will-change: transform;
+}
+
+/* ===== STAT GLOW EFFECT ===== */
+.stat-glow {
+  filter: drop-shadow(0 0 12px var(--color-accent-glow));
+}
+
+/* ===== HERO HEADLINE SPLIT WEIGHT ===== */
+.hero-headline-light {
+  font-weight: 300;
+}
+
+.hero-headline-bold {
+  font-weight: 700;
+}
+
+/* ===== HOVER EFFECTS ===== */
+.card-hover {
+  transition: all 0.2s ease;
+}
+
+.card-hover:hover {
+  border-color: var(--color-accent-bright);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== MOBILE MENU ===== */
+#mobile-menu {
+  background: var(--color-bg-nav) !important;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* ===== SCROLL CUE ===== */
+.scroll-cue {
+  animation: scroll-cue-bounce 2s ease-in-out infinite;
+}
+
+.scroll-cue:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-cue-bounce {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 8px);
+  }
+}
+
+/* ===== GRAPHIC PLACEHOLDERS ===== */
+/* Light-touch dummy graphics. Replace each .graphic-placeholder with final
+   artwork; the data-graphic attribute names the suggested asset. Styling is
+   kept complementary to the teal accent palette (no heavy imagery). */
+.graphic-placeholder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border: 1px dashed var(--color-accent);
+  border-radius: 0.75rem;
+  background:
+    linear-gradient(135deg, rgba(53, 151, 156, 0.06) 0%, rgba(87, 193, 198, 0.04) 100%);
+  color: var(--color-accent);
+  text-align: center;
+  padding: 2rem;
+  min-height: 200px;
+}
+
+.graphic-placeholder .graphic-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.graphic-placeholder .graphic-suggestion {
+  font-size: 0.8125rem;
+  color: var(--color-text-dim);
+  max-width: 26rem;
+  line-height: 1.5;
+}
+
+/* ===== HERO DECORATIVE LINE-ART (feedback5) ===== */
+/* Full-bleed abstract SVG layers that sit above the radial-gradient wash and
+   below the hero content (z-10). All colour comes from CSS variables with a
+   hard-coded fallback so the art degrades gracefully without custom props. */
+.hero-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.55;
+}
+
+/* Keep contour weights crisp despite preserveAspectRatio="slice" scaling */
+.hero-art [stroke] {
+  vector-effect: non-scaling-stroke;
+}
+
+@keyframes hero-drift {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50%      { transform: translate3d(0, -16px, 0); }
+}
+
+@keyframes hero-sway {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50%      { transform: translate3d(16px, 10px, 0); }
+}
+
+.hero-art--drift { animation: hero-drift 22s ease-in-out infinite; }
+.hero-art--sway  { animation: hero-sway 26s ease-in-out infinite; }
+
+/* ===== FLYWHEEL COMPOUNDING DIAGRAM (feedback5) ===== */
+.flywheel-diagram {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  margin-inline: auto;
+}
+
+.flywheel-diagram .fw-node-label {
+  font: 600 13px/1.15 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  fill: var(--color-text-primary, #212529);
+}
+
+.flywheel-diagram .fw-hub-label {
+  font: 700 15px/1.2 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  fill: var(--color-accent, #35979C);
+}
+
+.flywheel-diagram .fw-caption {
+  font: 400 13px/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  fill: var(--color-text-dim, #6C757D);
+}
+
+/* Slowly rotating outer ring + direction arrows convey the flywheel's motion */
+@keyframes fw-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.flywheel-diagram .fw-motion {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: fw-spin 48s linear infinite;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+
+  [data-parallax] {
+    transform: none !important;
+  }
+}
+
+/* ===== RESPONSIVE TWEAKS ===== */
+@media (max-width: 768px) {
+  #progress-bar {
+    display: none;
+  }
+}
