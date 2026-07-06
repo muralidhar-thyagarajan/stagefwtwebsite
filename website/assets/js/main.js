@@ -210,6 +210,29 @@ function initSmoothScroll() {
   });
 }
 
+// ===== SCROLL CUE (hero → next section) =====
+function initScrollCue() {
+  document.querySelectorAll('.scroll-cue').forEach(function(cue) {
+    cue.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      // Real in-page anchors (e.g. #section-2) are handled by initSmoothScroll
+      if (href && href.length > 1 && href.charAt(0) === '#') return;
+
+      e.preventDefault();
+      const hero = this.closest('section');
+      let next = hero ? hero.nextElementSibling : null;
+      while (next && next.tagName !== 'SECTION') {
+        next = next.nextElementSibling;
+      }
+      if (next) {
+        next.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        window.scrollBy({ top: Math.round(window.innerHeight * 0.9), behavior: 'smooth' });
+      }
+    });
+  });
+}
+
 // ===== FORM HANDLING =====
 function initFormHandling() {
   const contactForm = document.getElementById('contact-form');
@@ -238,5 +261,6 @@ document.addEventListener('DOMContentLoaded', function() {
   initProgressIndicator();
   initSectionLines();
   initSmoothScroll();
+  initScrollCue();
   initFormHandling();
 });
