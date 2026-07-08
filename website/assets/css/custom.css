@@ -300,6 +300,61 @@ body {
   animation: fw-spin 48s linear infinite;
 }
 
+/* ===== LEADERSHIP HEADSHOTS (feedback: grayscale + colour treatment) ===== */
+/* Resting state: cool teal-tinted monochrome that matches the palette.
+   Hover/focus within the card: fades to full natural colour. */
+.team-photo-img {
+  display: block;
+  filter: grayscale(1) contrast(1.03) brightness(1.02);
+  transition: filter 0.45s ease;
+}
+
+/* Teal wash tints the grayscale toward the brand accent (duotone feel) */
+.team-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-accent);
+  mix-blend-mode: color;
+  opacity: 0.32;
+  pointer-events: none;
+  transition: opacity 0.45s ease;
+}
+
+.team-photo:hover .team-photo-img {
+  filter: grayscale(0) contrast(1) brightness(1);
+}
+
+.team-photo:hover::after {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .team-photo-img,
+  .team-photo::after {
+    transition: none;
+  }
+}
+
+/* ===== PRIVACY POLICY PAGE ===== */
+.privacy-content {
+  font-size: 0.9rem;
+}
+
+.privacy-content p,
+.privacy-content li {
+  color: var(--color-text-dim);
+  line-height: 1.85;
+}
+
+.privacy-h2 {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--color-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
 /* ===== UTILITY CLASSES ===== */
 .text-balance {
   text-wrap: balance;
