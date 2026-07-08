@@ -1,0 +1,11 @@
+pages:
+  stage: deploy
+  script:
+    - echo "Publishing existing public folder"
+    - rm -rf public
+    - cp -r website public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
